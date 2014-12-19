@@ -9,9 +9,13 @@
   <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular"><a id="submit-button" class="btn btn-info font-DroidKufi-Bold" href="#">نفذ</a> ..... قم بكتابة الكود هنا بعد ذلك</strong></div>
   <div class="panel-body set-padding-to-zero">
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <%= javascript_include_tag "jquery" %>
+
     <script src="/assets/events.js"></script>
+    <%= javascript_include_tag "events" %>
     <script src="/assets/webruby.js"></script>
+    <%= javascript_include_tag "webruby" %>
 
     <div id="code-form">
       <div class="set-direction-ltr">
@@ -22,7 +26,6 @@
     </div>
 
     <!--<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>-->
-
     <%= javascript_include_tag "ace" %>
 
     <script>
