@@ -10,39 +10,74 @@
 
     <h2 id="title">الملخص الأول</h2>
 
-    <ol class="lists set-margin-bottom-to-zero">
+    <ol class="lists">
       <li>نحن نعمل بروبي الإصدار <strong>1.9.3</strong> على منصة ويندوز ، لكن هذه الدروس تطبيقها من قبل مستخدمي لينكس و ماك .</li>
       <li>روبي لغة مفسرة .</li>
       <li>في روبي ، هناك أكثر من طريقة لحل المشكلة نفسها .</li>
       <li>تنسيق الكود الخاص بك متاح لك بشكل كبير ، لكن عندما تستخدم مسافتان كبادئة لأسطر كودك ، تجعل من نشر برنامجك أسهل بين أصدقائك ، إذا كنت ترغب في نشر تعليماتك البرمجية .</li>
       <li>ملفات روبي تمتلك الإمتداد <strong class="font-Open-Sans-400">rb.</strong> ، أما في ويندوز قد تمتلك ملفات روبي أحياناً الإمتداد <strong class="font-Open-Sans-400">rbw.</strong> .</li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>في روبي يتم تنفيذ البرنامج من السطر الأول إلى الأخير .</li>
+      <li>المميزات : ذات تنسيق حر ، حساسة لحالة الأحرف ، طريقتان لعمل التعليقات ، الجمل المتقطعة ، 41 من الكلمات المحجوزة ، كل القيم في روبي صحيحة .</li>
+      <li>تعتبر روبي كل القيم سواء كان نص فارغ او القيمة صفر او عدد سالب صحيحة ، كل شيء في روبي صحيح فيما عدا الكلمتان المحجوزتان <strong class="font-Open-Sans-400">nil , false</strong> .</li>
+      <li>تتوفر روبي على وثائق تشرح مميزات اللغة بشكل مفصل وكيفية استخدامها ، يمكنك زيارتها عن طريق الضغط <%= link_to "هنا", "http://www.ruby-doc.org/", target: "_blank" %> .</li>
+      <li><strong class="font-Open-Sans-400">puts</strong> هي دالة معرفة داخل اللغة تقوم بطباعة النص الذي يأتي بعدها على الشاشة وتقوم بالإنتقال إلى السطر التالي تلقائياً .</li>
+      <li>الأقواس إختيارية في لغة روبي أثناء إستدعاء أي دالة كانت سواء تحتوي على متغيرات أم لا ، للإيضاح أكثر كل الإستدعاءات التالية صحيحة :</li>
+
+      <p class="set-direction-ltr">
+        <strong class="set-direction-ltr font-Open-Sans-300">
+          foobar<br>
+          foobar()<br>
+          foobar(a, b, c)<br>
+          foobar a, b, c
+        </strong>
+      </p>
+
+      <li>في روبي الأعداد التي من دون علامة عشرية يطلق عليها الاعداد الصحيحة - <strong class="font-Open-Sans-400">integers</strong> - ، أما التي تحتوي على علامة عشرية يطلق عليها أعداد العلامة العشرية - <strong class="font-Open-Sans-400">floating-point numbers</strong> - ، أو بمعنى أقل بساطة العشريات - <strong class="font-Open-Sans-400">floats</strong> - ( يجب عليك وضع رقم واحد على الأقل بعد العلامة العشرية ) .</li>
+      <li>أعداد روبي الصحيحة هي كائنات - <strong class="font-Open-Sans-300">objects</strong> - من فئتي - <strong class="font-Open-Sans-300">classes</strong> - إما <strong class="font-Open-Sans-400">Fixnum</strong> او <strong class="font-Open-Sans-400">Bignum</strong> . الفئتان <strong class="font-Open-Sans-400">Fixnum</strong> و <strong class="font-Open-Sans-400">Bignum</strong> تمثل طبقة الأعداد الصحيحة بأحجام مختلفة . الفئتان ينحدران من <strong class="font-Open-Sans-400">Integer</strong> ( بناءاً على الفئة <strong class="font-Open-Sans-400">Numeric</strong> ) .</li>
+      <li>تستطيع روبي التعامل مع أعداد كبيرة جداً ، على عكس العديد من لغات البرمجة الآخرى ، لا توجد حدود لحجم الأعداد التي يمكنك التعامل معها في روبي ، روبي تقوم بذلك مع فئات مختلفة ، تسمى الاولى <strong class="font-Open-Sans-400">Fixnum</strong> ( الإفتراضية ) الذي يمثل فئة الأعداد الصغيرة ، أما الثانية وهي <strong class="font-Open-Sans-400">Bignum</strong> والتي تمثل الأعداد الكبيرة ، روبي تتعامل مع هذه الفئات بكل سهولة و يمكنك إجراء اي عمليات حسابية كبيرة أو صغيرة بدون مشاكل و بدون أي قلق .</li>
+      <li>بعض عمليات روبي الشائعة : <span style="font-family: Tahoma;">+</span> الجمع ، <span style="font-family: Tahoma;">-</span> الطرح ، <span style="font-family: Tahoma;">*</span> الضرب ، <span style="font-family: Tahoma;">/</span> القسمة .</li>
+      <li>عملية الزيادة و النقصان ( <span style="font-family: Tahoma;">--</span> و <span style="font-family: Tahoma;">++</span> ) ، غير متوفرة في روبي ، مع ذلك يمكنك إستخدام العملية <span style="font-family: Tahoma;">=-</span> و <span style="font-family: Tahoma;">=+</span> .</li>
+      <li>كما في الرياضيات العادية يتم إحتساب ما بداخل الأقواس قبل العمليات الخارجية .</li>
+      <li>تذكر أن العملية <span style="font-family: Tahoma;">%</span> يختلف التعامل معها في روبي عن باقي لغات البرمجة .</li>
+      <li>عندما تقوم بأي عملية حسابية بإستخدام أعداد صحيحة ( خالية من العلامة العشرية ) ، ستحصل على ناتج صحيح .</li>
+      <li>النصوص في روبي يمكنك وضعها بين علامة إقتباس أحادية ' أو ثنائية " .</li>
+      <li>يمكنك الجمع بين نصين في روبي عن طريق إستعمال العملية <span style="font-family: Tahoma;">+</span> .</li>
+      <li>تستخدم العملية <span style="font-family: Tahoma;">>></span> كعملية إضافة للنصوص .</li>
+      <li>عند إضافة العلامة <strong>\</strong> في أي نص سيتم تنفيذ الحرف الذي يلي العلامة على أنه جزء من النص ، حتى لو أردت إستعمال علامة إقتباس داخل النص .</li>
+      <li>عندما يكون هناك علامة إقتباس سواء أحادية '' او ثنائية "" فارغة ، يقال عنها أنها سلسلة نصية فارغة .</li>
+      <li>إذا تلقيت خطأ أثناء تنفيذ البرنامج مثل <strong class="font-Open-Sans-300">TypeError: cannot convert Fixnum into String</strong> ، فهذا يعني أنك قمت بجمع عدد مع نص أو ضرب نص مع نص أخر و هذا غير ممكن .</li>
+      <li>تأكد من عدم إستخدام المتغيرات المحلية قبل أن تقوم بتعيين قيمة لها ، لان إستخدامها بدون قيمة سيظهر لك خطأ أثناء التنفيذ .</li>
+      <li>قم بإستخدام المسافات لتنضيم الكود الخاص بك أكثر ، على سبيل المثال :</li>
+
+      <p class="font-Open-Sans-400 text-left">foo = 1</p>
+      <p>ليس :</p>
+      <p class="font-Open-Sans-400 text-left">foo=1</p>
+
+      <li>قم بتعريف متغير في كل سطر :</li>
+
+      <p class="font-Open-Sans-400 text-left">level = 0</p>
+      <p class="font-Open-Sans-400 text-left">size = 0</p>
+      <p>التنسيق السابق يفضل أكثر عن التنسيق التالي :</p>
+      <p class="font-Open-Sans-400 text-left">level = size = 0</p>
+
+      <li>يمكنك تبديل قيم 2 من المتغيرات بطريقة بسيطة جدا في روبي كالتالي :</li>
+
+      <p class="font-Open-Sans-400 text-left">x, y = y, x</p>
+      <p>وبهذه الطريقة ستحصل على قيمة المتغير <strong class="font-Open-Sans-400 text-left">x</strong> في المتغير <strong class="font-Open-Sans-400 text-left">y</strong> و قيمة المتغير <strong class="font-Open-Sans-400 text-left">y</strong> في المتغير <strong class="font-Open-Sans-400 text-left">x</strong> .</p>
+
+      <li>المتغيرات المحلية الخاصة ببرنامجك يجب أن تبدأ بشرطة سفلية (_) او حرف صغير ، و يجب أن تتكون بالكامل من حروف و أرقام ، على سبيل المثال :</li>
+
+      <p class="font-Open-Sans-400 set-direction-ltr">_libya, some_var</p>
+
+      <li><strong class="font-Open-Sans-400">to_i, to_f, to_s</strong> تستخدم لتغيير المتغيرات من نوع بيانات إلى آخر .</li>
     </ol>
+
+    <p class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "المتغيرات", ruby_tutorial_variables_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "المجالات", ruby_tutorial_scope_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
   </div>
 </div>
