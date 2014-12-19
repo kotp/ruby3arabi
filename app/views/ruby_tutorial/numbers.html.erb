@@ -1,0 +1,500 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "مميزات روبي", ruby_tutorial_features_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "النصوص في روبي", ruby_tutorial_strings_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">الأعداد</h2>
+
+    <p>هي بنا لنلعب قليلاً مع الأعداد في لغة روبي ، في روبي الأعداد التي من دون علامة عشرية يطلق عليها الاعداد الصحيحة - <strong class="font-Open-Sans-400">integers</strong> - ، أما التي تحتوي على علامة عشرية يطلق عليها أعداد العلامة العشرية - <strong class="font-Open-Sans-400">floating-point numbers</strong> - ، أو بمعنى أقل بساطة العشريات - <strong class="font-Open-Sans-400">floats</strong> - ( يجب عليك وضع رقم واحد على الأقل بعد العلامة العشرية ) .</p>
+
+    <p class="set-margin-bottom-to-zero">العدد الصحيح هو ببساطة سلسلة من الأرقام ، على سبيل المثال : 0 , 123 , 123456789 ، و يمكن إدخال شرطة سفلية للأعداد بمثابة الفاصلة في الآلاف ، على سبيل المثال 000_000_000_1 ، و سيتم تجاهل الشرطة السفلية في الأعداد ، هذا البرنامج سيوضح لك المزيد عن الأعداد في روبي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p005.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_127481" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby constants">1</code> <code class="ruby plain">+ </code><code class="ruby constants">2</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts </code><code class="ruby constants">10</code> <code class="ruby plain">- </code><code class="ruby constants">11</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">puts </code><code class="ruby constants">2</code> <code class="ruby plain">* </code><code class="ruby constants">3</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">puts </code><code class="ruby constants">3</code> <code class="ruby plain">/ </code><code class="ruby constants">2</code></div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">puts </code><code class="ruby constants">3</code><code class="ruby plain">.</code><code class="ruby constants">0</code> <code class="ruby plain">/ </code><code class="ruby constants">2</code><code class="ruby plain">.</code><code class="ruby constants">0</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_982303" class="syntaxhighlighter  bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p005.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">3</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">-1</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">6</code></div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">1</code></div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">1.5</code></div>
+                  <div class="line number7 index6 alt2">&nbsp;</div>
+                  <div class="line number8 index7 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">كما لاحظتم عند قسمة عدد صحيح على عدد صحيح أعطانا الناتج كعدد صحيح ، أما عندما نفذنا نفس عملية القسمة مع علامة عشرية اختلف الأمر حيث أظهر الناتج على شكل عدد عشري ( يمكنك وضع علامة عشرية في أحد الأعداد فقط ) ، هذه من الأمور التي يجب عليك الإنتباه لها عند التعامل مع الأعداد في روبي .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أعداد روبي الصحيحة هي كائنات - <strong class="font-Open-Sans-300">objects</strong> - من فئتي - <strong class="font-Open-Sans-300">classes</strong> - إما <strong class="font-Open-Sans-400">Fixnum</strong> او <strong class="font-Open-Sans-400">Bignum</strong> . الفئتان <strong class="font-Open-Sans-400">Fixnum</strong> و <strong class="font-Open-Sans-400">Bignum</strong> تمثل طبقة الأعداد الصحيحة بأحجام مختلفة . الفئتان ينحدران من <strong class="font-Open-Sans-400">Integer</strong> ( بناءاً على الفئة <strong class="font-Open-Sans-400">Numeric</strong> ) .</p>
+
+    <p>أما الأعداد العشرية هي كائنات من الفئة <strong class="font-Open-Sans-400">Float</strong> ، الفئات <strong class="font-Open-Sans-400">Complex</strong> , <strong class="font-Open-Sans-400">BigDecimal</strong> و <strong class="font-Open-Sans-400">Rational</strong> ليست من الفئات المبنية داخل روبي ولكنها مضمنه مع روبي كمكتبات قياسية .</p>
+
+    <center>
+      <div class="col-md-12">
+        <p class="font-Open-Sans-700">Basic Object</p>
+        <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p class="font-Open-Sans-600">Object</p>
+            <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+
+            <div class="row">
+              <div class="col-md-12">
+                <p class="font-Open-Sans-600">Numeric</p>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+                    <p class="font-Open-Sans-400">Integer</p>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+                        <p class="font-Open-Sans-300">Bignum</p>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+                        <p class="font-Open-Sans-300">Fixnum</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="glyphicon glyphicon-chevron-down" aria-hidden="true"></p>
+                    <p class="font-Open-Sans-400">Float</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <p class="set-margin-bottom-to-zero">سنتكلم عن الفئات - <strong class="font-Open-Sans-400">classes</strong> - بتفصيل أكثر فيما بعد .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="lead">العمليات</p>
+
+    <p>دعونا نلقي نظرة على العمليات في روبي ، ستجدها مرتبه في الجدول التالي من الأكثر إلى الأقل أسبقية في الإستخدام .</p>
+
+    <table class="table table-striped table-bordered font-DroidKufi-Regular set-margin-bottom-to-zero">
+      <thead class="font-DroidKufi-Bold">
+        <tr>
+          <th class="text-right">دالة</th>
+          <th class="text-right">العملية</th>
+          <th class="text-right">الوصف</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">::</td>
+          <td>الإشارة إلى الثوابت</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">[] []=</td>
+          <td>الإشارة لعنصر ، تعيين قيمة عنصر</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">**</td>
+          <td>أس الرقم</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">! ~</td>
+          <td>عملية النفي ، نفي الأرقام</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">* / %</td>
+          <td>الضرب ، القسمة ، باقي القسمة</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">+ -</td>
+          <td>الجمع ، الطرح</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;"><< >></td>
+          <td>عملية التحويل اليمنى و اليسرى ( تستخدم العملية اليسرى <span style="font-family: Tahome;">>></span> كعملية إضافة في بعض الأحيان )</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">& ^ |</td>
+          <td>عمليات الأعداد الثنائية</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;"><= < > >=</td>
+          <td>عمليات المقارنة</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;"><=> == === != =~ !~</td>
+          <td>المساواة و عمليات التحقق من التطابق ( <span style="font-family: Tahome;">!=</span style="font-family: Tahome;"> و <span>!~</span> قد لا تكون معرفة على أنها دوال )</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">&& ||</td>
+          <td>عمليات التحقق المنطقي</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">.. ...</td>
+          <td>عمليات النطاقات</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">? :</td>
+          <td>العملية الثلاثية للجمل الشرطية <span class="font-Open-Sans-300">if-then-else</span></td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">= %= /= -= += |= &= >>= <<= *= &&= ||= **=</td>
+          <td>عمليات تعيين القيم</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">?defined</td>
+          <td>عملية تأكيد تعريف المتغير</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">not</td>
+          <td>النفي المنطقي</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+          <td style="font-family: Tahoma;">or and</td>
+          <td>التحقق المنطقي</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أ - العمليات التي تحصل على العلامة <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> في الجدول السابق هي بالفعل دوال ، و هذا يعني أنه يمكنك تجاوزها - <strong class="font-Open-Sans-400">overridden</strong> - .</p>
+
+    <p>ب - عملية الزيادة و النقصان ( <span style="font-family: Tahoma;">--</span> و <span style="font-family: Tahoma;">++</span> ) ، غير متوفرة في روبي ، مع ذلك يمكنك إستخدام العملية <span style="font-family: Tahoma;">=-</span> و <span style="font-family: Tahoma;">=+</span> .</p>
+
+    <p class="set-margin-bottom-to-zero">ج - كما في الرياضيات العادية يتم إحتساب ما بداخل الأقواس قبل العمليات الخارجية .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">عملية باقي القسمة ( <span style="font-family: Tahoma;">%</span> ) في روبي يتم التعامل معها كالتالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p006.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_368724" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts (</code><code class="ruby constants">5</code> <code class="ruby plain">% </code><code class="ruby constants">3</code><code class="ruby plain">)</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts (-</code><code class="ruby constants">5</code> <code class="ruby plain">% </code><code class="ruby constants">3</code><code class="ruby plain">)</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">puts (</code><code class="ruby constants">5</code> <code class="ruby plain">% -</code><code class="ruby constants">3</code><code class="ruby plain">)</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">puts (-</code><code class="ruby constants">5</code> <code class="ruby plain">% -</code><code class="ruby constants">3</code><code class="ruby plain">)</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_134586" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p006.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">2</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">1</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">-1</code></div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">-2</code></div>
+                  <div class="line number6 index5 alt1">&nbsp;</div>
+                  <div class="line number7 index6 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>روبي قامت بتعريف عملية باقي القسمة ( <span style="font-family: Tahoma;">%</span> ) بشكل مختلف عن لغات مثل <strong class="font-Open-Sans-300">Java , C</strong> ، في روبي ناتج -7<span style="font-family: Tahoma;">%</span>3 هو 2 بينما في <strong class="font-Open-Sans-300">Java , C</strong> الناتج هو -1 .</p>
+
+    <p class="lead">الفرق بين العملية <strong class="font-Open-Sans-300">or</strong> و ||</p>
+
+    <p class="set-margin-bottom-to-zero">العمليتان <strong class="font-Open-Sans-300">or</strong> و || يرجعان القيمة الأولى ، إلا إذا كانت القيمة الأولى تساوي <strong class="font-Open-Sans-400">false , nil</strong> في هذه الحالة ترجع القيمة الثانية ، ويظهر هذا في البرنامج التالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p007.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_339458" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby keyword">nil</code> <code class="ruby plain">|| </code><code class="ruby constants">2014</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts </code><code class="ruby keyword">false</code> <code class="ruby plain">|| </code><code class="ruby constants">2014</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">puts </code><code class="ruby string">"ruby"</code> <code class="ruby plain">|| </code><code class="ruby constants">2014</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_572198" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p007.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">2014</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">2014</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">ruby</code></div>
+                  <div class="line number5 index4 alt2">&nbsp;</div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>الفارق الوحيد بين <strong class="font-Open-Sans-300">or</strong> و || هو أن العملية || لها الأسبقية على العملية <strong class="font-Open-Sans-300">or</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">من الإستعمالات الشائعة للعملية || هي إسناد قيمة لمتغير إذا لم يكن له أي قيمة و تتم هذه العملية كالتالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">|| من إستخدامات العملية</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_623387" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby variable bold">@variable</code> <code class="ruby plain">= </code><code class="ruby variable bold">@variable</code> <code class="ruby plain">|| </code><code class="ruby string">"default value"</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>بهذه الطريقة إذا لم يكن هناك أي قيمة للمتغير سيتم إعطاءه القيمة الإفتراضية .</p>
+
+    <p class="set-margin-bottom-to-zero">يمكن فعل نفس الأمر بكود أقل و أكثر فاعلية كالتالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">|| من إستخدامات العملية</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_623387" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby variable bold">@variable</code> <code class="ruby plain">||= </code><code class="ruby string">"default value"</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>إلى هنا نكون قد وصلنا إلى نهاية حديثنا عن الأعداد في روبي مؤقتاً ، في دروسنا الأخرى سنتحدث عن الأعداد أكثر لأنها تدخل في جميع مجالات البرمجة بأي لغة كانت ، فهذه من الأمور المهمه و التي يجب على كل مبرمج الإهتمام بها ، لأنه و بكل بساطة البرمجة هي عبارة عن عمليات حسابية معقدة .</p>
+
+    <p class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "مميزات روبي", ruby_tutorial_features_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "النصوص في روبي", ruby_tutorial_strings_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

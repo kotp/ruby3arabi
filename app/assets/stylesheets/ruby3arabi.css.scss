@@ -1,0 +1,94 @@
+// Place all the styles related to the ruby3arabi controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#editor-container {
+  height: 250px;
+  width: 100%;
+}
+#editor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/*.ace_scroller {
+  background-color: #000 !important;
+}
+.ace_gutter {
+  background-color: #000 !important;
+  border-right: 1px solid #666;
+}*/
+.ace_active_line {
+  background: none !important;
+}
+.ace_print_margin {
+  background: none !important;
+}
+
+.main-img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.img-name {
+  position: absolute;
+  height: 0;
+  width: 190px;
+  background: rgba(0,0,0,.45);
+  overflow: hidden;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+  color: #fff;
+  line-height: 50px;
+  font-size: 1.3em;
+
+  .set-margin-bottom-to-zero {
+    margin-top: 88px;
+  }
+}
+
+.main-img:hover .img-name {
+  height: 200px;
+}
+
+.thank-img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 125px;
+  height: 125px;
+}
+
+.thank-name {
+  position: absolute;
+  height: 0;
+  width: 115px;
+  background: rgba(0,0,0,.45);
+  overflow: hidden;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+  color: #fff;
+  line-height: 50px;
+  font-size: 1em;
+
+  p {
+    margin-top: 56px;
+  }
+}
+
+.thank-img:hover .thank-name {
+  height: 125px;
+}

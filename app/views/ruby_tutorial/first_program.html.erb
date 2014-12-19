@@ -1,0 +1,205 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "التنصيب", ruby_tutorial_installation_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "مميزات روبي", ruby_tutorial_features_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">برنامجك الأول</h2>
+    <p class="lead">برنامجك الأول على روبي</p>
+
+    <p>بدايةً قم بفتح المحرر المفضل بالنسبة لك وقم بإعداده حسب رغبتك ، و الأن أنت مستعد لكتابة برنامجك الأول .</p>
+
+    <p>يمكنك إنشاء مجلد تحت اسم <strong>برامج روبي</strong> وسنقوم بوضع كل برامجنا داخل هذا المجلد ، برنامجك الأول سيعرض جملة <strong class="font-Open-Sans-300">"!Hello World"</strong> على سطر أوامر ويندوز ( أو حسب نظام التشغيل الذي تعمل عليه ) .</p>
+
+    <p>ملفات كود روبي تمتلك امتداد <strong class="font-Open-Sans-300">rb.</strong> ، أما على منصات ويندوز يمكن ان تنتهي بإمتداد <strong class="font-Open-Sans-300">rbw.</strong> ، على سبيل المثال <strong class="font-Open-Sans-300">myscript.rbw</strong> .</p>
+
+    <p>أيضاً من المتعارف عليه عند تسمية ملفات كود روبي دائماً ما تكون بحروف صغيرة من اسم <strong class="font-Open-Sans-300">class/module</strong> ومثالاً لذلك عندما تمتلك <strong class="font-Open-Sans-300">class</strong> تحت اسم <strong class="font-Open-Sans-300">Foo</strong> يكون اسم الملف الذي يحتوي على الكود هو <strong class="font-Open-Sans-300">foo.rb</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">قم بكتابة الكود التالي على محرر النصوص خاصتك .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p001.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts</code> <code class="ruby string">'Hello World!'</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>بعد ذلك قم بحفظ الملف تحت اسم <strong class="font-Open-Sans-400">p001.rb</strong> داخل مجلد <strong>برامج روبي</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">لتقوم بتشغيل الكود الذي كتبته الأن ، قم بفتح سطر الأوامر وقم بالتوجه إلى موقع حفظ الملف داخل مجلد برامج روبي و قم بكتابة <strong class="font-Open-Sans-400">ruby p001.rb</strong> ، يجب أن تشاهد الناتج كما هو موضح في الأسفل .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_460146" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p001.rb</code></div>
+                <div class="line number2 index1 alt1"><code class="bash plain">Hello World!</code></div>
+                <div class="line number3 index2 alt2"> </div>
+                <div class="line number4 index3 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>كما لاحظتم روبي لغة سكربتات بمعنى انه لا يوجد دالة رئيسية - <strong class="font-Open-Sans-400">main method</strong> - يبدأ منها التنفيذ ، مفسر روبي يأخذ الكود و يبدأ بتنفيذه سطر بعد الأخر من أول سطر إلى أن يصل إلى أخر سطر .</p>
+
+    <p class="set-margin-bottom-to-zero"><strong class="font-Open-Sans-400">puts</strong> هي دالة معرفة داخل اللغة تقوم بطباعة النص الذي يأتي بعدها على الشاشة وتقوم بالإنتقال إلى السطر التالي تلقائياً ، يمكنك إستخدام الدالة <strong class="font-Open-Sans-400">print</strong> بدلاً منها ولكنها لن تنتقل إلى السطر الذي بعده هذا هو الفرق بينهما ( الدالة <strong class="font-Open-Sans-300">puts</strong> أكثر إستخداماً من <strong class="font-Open-Sans-300">print</strong> ) .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p002.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">print</code> <code class="ruby string">'Hello World!'</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_460146" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p002.rb</code></div>
+                <div class="line number2 index1 alt1"><code class="bash plain">Hello World!</code></div>
+                <div class="line number3 index2 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>أتمنى أنك لاحظت الفارق بين المثال الأول و الثاني حيث أنه في المثال الأول بعد طباعة النص قام بترك سطر فارغ و سمح لك بكتابة باقي الأوامر أما في المثال الثاني لم يترك لك أي فراغ و سمح لك بمتابعة الكتابة بعد النص مباشرة .</p>
+
+    <p class="set-margin-bottom-to-zero">يمكنك الفهم أكثر إذا قمنا بتشغيل البرنامج <strong class="font-Open-Sans-400">p002.rb</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أ - أثناء الحديث عن الدالتين <strong class="font-Open-Sans-300">puts , print</strong> لم نقم بكتابة أي أقواس أثناء الإستدعاء ، في الحقيقة هي إختيارية في لغة روبي أثناء إستدعاء أي دالة كانت سواء تحتوي على متغيرات أم لا ، للإيضاح أكثر كل الإستدعاءات التالية صحيحة :</p>
+
+    <p class="set-direction-ltr">
+      <strong class="font-Open-Sans-300">
+        foobar <br>
+        foobar() <br>
+        foobar(a, b, c) <br>
+        foobar a, b, c
+      </strong>
+    </p>
+
+    <p>ب - في روبي كل شيء بدايةً من الأعداد الصحيحة وصولاً إلى النصوص هي كائنات - <strong class="font-Open-Sans-400">objects</strong> - وكل كائن يحتوي داخله على دوال جاهزة يمكن إستخدامها في أغراض متعددة . لتتمكن من إستخدام الدالة يجب عليك وضع <strong>نقطة</strong> بعد الكائن الذي تريد تطبيق الدالة عليه بعد ذلك تقوم بكتابة اسم الدالة المراد استخدامها . بعض الدوال مثل <strong class="font-Open-Sans-300">puts , print</strong> يمكن استخدامها في أي مكان دون الحاجة لإسنادها إلى متغير معين .</p>
+
+    <p class="set-margin-bottom-to-zero">بعمق أكثر ، هذه الدوال تم تجهيزها مسبقاً من قبل اللغة داخل <strong class="font-Open-Sans-300"><span class="font-Open-Sans-400">Kernal</span> module</strong> و تم إحتوائها في جميع كائنات روبي ( <strong class="font-Open-Sans-300"><span class="font-Open-Sans-400">Kernal</span> module</strong> تم إحتوائها من قبل <strong class="font-Open-Sans-300"><span class="font-Open-Sans-400">Object</span> class</strong> ، لذلك كل هذه الدوال تلقائياً متاحة في كل كائنات روبي ) وعندما تقوم بتشغيل برنامج روبي ، الكائن يقوم بإستدعاء <strong class="font-Open-Sans-400">main</strong> من <strong class="font-Open-Sans-400">Object</strong> عند الإنشاء ، وهذا الكائن سيحتوي تلقائياً على كل دوال <strong class="font-Open-Sans-400">Kernal</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-default last">
+  <div class="panel-body">
+    <p class="lead">لاحظ أن :</p>
+
+    <ol class="lists">
+      <li>بالنسبة لمبرمجي لغات مثل <strong class="font-Open-Sans-300">Java , C</strong> لا حاجة لأن تقوموا بتعريف دالة رئيسية ( <strong class="font-Open-Sans-300">main method/function</strong> ) .</li>
+      <li>النصوص في روبي يمكن كتابتها داخل علامة إقتباس أحادية ' أو ثنائية " ، خلال الأمثلة السابقة قمت بإستخدام العلامة الأحادية فهي أكثر كفاءة من الثنائية ( سنتعرف على هذا فيما بعد ) .</li>
+      <li>روبي لغة مفسرة لذا لا حاجة للقيام بإعادة ترجمة للكود الخاص بك كي يعمل على منصة أو بنية مختلفة عن الذي قمت بتصميم برنامجك عليها .</li>
+      <li>من المتعارف عليه عند تسمية ملفات كود روبي دائماً ما تكون بحروف صغيرة من اسم <strong class="font-Open-Sans-300">class/module</strong> ومثالاً لذلك عندما تمتلك <strong class="font-Open-Sans-300">class</strong> تحت اسم <strong class="font-Open-Sans-300">Foo</strong> يكون اسم الملف الذي يحتوي على الكود هو <strong class="font-Open-Sans-300">foo.rb</strong> .</li>
+    </ol>
+
+    <p class="set-margin-bottom-to-zero text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "التنصيب", ruby_tutorial_installation_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "مميزات روبي", ruby_tutorial_features_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

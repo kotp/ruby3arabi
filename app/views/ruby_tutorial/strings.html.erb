@@ -1,0 +1,258 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الأعداد", ruby_tutorial_numbers_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "المتغيرات", ruby_tutorial_variables_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">النصوص في روبي</h2>
+
+    <p>النصوص في روبي و العديد من لغات البرمجة هي عبارة عن سلسلة من الحروف بين علامة إقتباس أحادية ' أو ثنائية " .</p>
+
+    <p>عندما يكون هناك علامة إقتباس سواء أحادية '' او ثنائية "" فارغة ، يقال عنها أنها سلسلة نصية فارغة .</p>
+
+    <p class="set-margin-bottom-to-zero">البرنامج <strong class="font-Open-Sans-400">p008.rb</strong> يستكشف النصوص في روبي إلى حد ما .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p008.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_798818" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby string">"Hello World!"</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts </code><code class="ruby string">'Hello World!'</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">puts </code><code class="ruby string">'I like'</code> <code class="ruby plain">+ </code><code class="ruby string">' Ruby'</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">puts </code><code class="ruby string">'It\'s my Ruby string'</code></div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">puts </code><code class="ruby string">'Hello '</code> <code class="ruby plain">* </code><code class="ruby constants">3</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_694956" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p008.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">Hello World!</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">Hello World!</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">I like Ruby</code></div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">It's my Ruby string</code></div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">Hello Hello Hello</code></div>
+                  <div class="line number7 index6 alt2">&nbsp;</div>
+                  <div class="line number8 index7 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>الأن مع شرح بسيط للبرنامج السابق ، في السطر الأول من البرنامج و السطر الثاني قمنا بطباعة جملة <strong class="font-Open-Sans-300">!Hello World</strong> ولكن قمنا بإستخدام علامات الإقتباس الأحادية و الثنائية .</p>
+
+    <p>أما في السطر الثالث بالتأكيد تعجبتم قليلاً من إجراء عملية حسابية على سلاسل حرفية ، لا تتعجب عزيزي القارئ فكما قلنا أن في روبي كل شيء هو كائن و هذا يعني أنه يمكنك إجراء أي عمليات عليه فنحن قمنا بجمع سلسلة حرفية مع أخرى و أعطانا الناتج سلسلة حرفية تتكون من الإثنين .</p>
+
+    <p>نأتي إلى السطر الرابع الذي قمنا بإستخدام علامة <strong>\</strong> والتي تحدثنا عنها فيما سبق أنها تستخدم لتقسيم الكود الخاص بك على أكثر من سطر ، أما إستخدامها هذه المرة مختلف قليلاً ، فكما تلاحظون أننا استخدمنا خلال طباعة الجملة في السطر الرابع علامة الإقتباس الأحادية و قمنا كذلك داخل الجملة بإستخدام علامة الإقتباس الأحادية ، فهذا سيعطيك خطأ في الكود لأنك تحاول طباعة سلسلة حرفية و قمت بترك كلام غير مفهوم خارج السلسلة ، لكن مع علامة <strong>\</strong> تخبر المفسر أن علامة الإقتباس الأحادية التي بداخل السلسلة ما هي إلا جزء منها فيقوم بتجاهلها و طباعتها كنص ، كذلك هذه الطريقة تستخدم بكثرة في أمور اخرى داخل لغة روبي و العديد من اللغات الأخرى سنتعرف عليها فيما بعد ، يمكنك تجاوز هذا الخطأ أيضاً بطريقة أخرى عن طريق إستخدام علامة إقتباس ثنائية عند الطباعة و إستخدام العلامة الأحادية داخل النص أو العكس .</p>
+
+    <p class="set-margin-bottom-to-zero">تبقى السطر الخامس و الأخير في هذا البرنامج والذي قمنا فيه بعملية ضرب على سلسلة حرفية ! ، نعم فهذا ممكن في روبي حيث يمكنك تكرار نص معينة بضربه في العدد الذي تريد تكراره به ، يعني أنك تستطيع إستخدام أي رقم بدلاً من 3 و إستخدام أي سلسلة حرفية بدلاً من المستخدمة داخل البرنامج .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">إذا كانت مدخلات الدالة <strong class="font-Open-Sans-400">puts</strong> ليست سلاسل نصية تقوم الدالة بإستدعاء الطريقة <strong class="font-Open-Sans-400">to_s</strong> للمدخل الذي قمت بإرساله لها ، بعد ذلك تقوم بطباعة السلسلة النصية المرجعة من الطريقة <strong class="font-Open-Sans-400">to_s</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">أيضاً من الجدير بالذكر أنه هناك نوع خاص من السلاسل الحرفية يمكنك إستخدامه عن طريق كتابة العلامة <strong>`</strong> بدلا من علامات الإقتباس ، على سبيل المثال .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p009.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_798818" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby string">`dir`</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_759232" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+                <div class="line number9 index8 alt2">9</div>
+                <div class="line number10 index9 alt1">10</div>
+                <div class="line number11 index10 alt2">11</div>
+                <div class="line number12 index11 alt1">12</div>
+                <div class="line number13 index12 alt2">13</div>
+                <div class="line number14 index13 alt1">14</div>
+                <div class="line number15 index14 alt2">15</div>
+                <div class="line number16 index15 alt1">16</div>
+                <div class="line number17 index16 alt2">17</div>
+                <div class="line number18 index17 alt1">18</div>
+                <div class="line number19 index18 alt2">19</div>
+                <div class="line number20 index19 alt1">20</div>
+                <div class="line number21 index20 alt2">21</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">C:\برامج روبي&gt; ruby p009.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">Volume </code><code class="bash keyword">in</code> <code class="bash plain">drive C has no label.</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">Volume Serial Number is 1AEA-6007</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">Directory of C:\برامج روبي</code></div>
+                  <div class="line number6 index5 alt1">&nbsp;</div>
+                  <div class="line number7 index6 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">09:34 PM&nbsp;&nbsp;&nbsp; &lt;</code><code class="bash functions">dir</code><code class="bash plain">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .</code></div>
+                  <div class="line number8 index7 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">09:34 PM&nbsp;&nbsp;&nbsp; &lt;</code><code class="bash functions">dir</code><code class="bash plain">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..</code></div>
+                  <div class="line number9 index8 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/14/2014</code>&nbsp; <code class="bash plain">02:07 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 34 p001.rb</code></div>
+                  <div class="line number10 index9 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/13/2014</code>&nbsp; <code class="bash plain">11:51 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 35 p002.rb</code></div>
+                  <div class="line number11 index10 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/14/2014</code>&nbsp; <code class="bash plain">03:18 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 73 p003.rb</code></div>
+                  <div class="line number12 index11 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/14/2014</code>&nbsp; <code class="bash plain">03:34 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 55 p004.rb</code></div>
+                  <div class="line number13 index12 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/14/2014</code>&nbsp; <code class="bash plain">02:17 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 77 p005.rb</code></div>
+                  <div class="line number14 index13 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">02:36 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 71 p006.rb</code></div>
+                  <div class="line number15 index14 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">03:02 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 70 p007.rb</code></div>
+                  <div class="line number16 index15 alt1"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">07:22 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 126 p008.rb</code></div>
+                  <div class="line number17 index16 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">12</code><code class="bash plain">/15/2014</code>&nbsp; <code class="bash plain">09:34 PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23 p009.rb</code></div>
+                  <div class="line number18 index17 alt1"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">9 File(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 564 bytes</code></div>
+                  <div class="line number19 index18 alt2"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">2 Dir(s)&nbsp; 349,963,145,216 bytes </code><code class="bash functions">free</code></div>
+                  <div class="line number20 index19 alt1">&nbsp;</div>
+                  <div class="line number21 index20 alt2"><code class="bash spaces">&nbsp;&nbsp;</code><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>كما شاهدتم نتيجة طباعة هذا النص تظهر لنا الملفات الموجوده في المجلد الذي تم منه التنفيذ ، و هذا بالضبط هو الناتج الذي سيظهر إذا قمت بكتابة الأمر <strong class="font-Open-Sans-400">dir</strong> على سطر الأوامر في ويندوز ، طبعاً مستخدمي لينكس يمكنهم تنفيذ نفس المثال عن طريق تغيير الأمر <strong class="font-Open-Sans-400">dir</strong> إلى الأمر <strong class="font-Open-Sans-400">ls</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">كما يمكننا أداء نفس العملية عن طريق الدالة <strong class="font-Open-Sans-400">system</strong> الموجودة في <strong class="font-Open-Sans-400">Kernal</strong> ، الدالة <strong class="font-Open-Sans-400">system</strong> تعيد القيمة <strong class="font-Open-Sans-400">true</strong> إذا كان الأمر المرسل لها قابل للتنفيذ ، و تعيد القيمة <strong class="font-Open-Sans-400">false</strong> إذا كانت نتيجة الأمر المرسل يرجع بقيمة خروج صفرية ، وتعيد القيمة <strong class="font-Open-Sans-400">nil</strong> إذا كان الأمر المرسل لها غير قابل للتنفيذ ، و المثال التالي ينفذ الأمر <strong class="font-Open-Sans-400">dir</strong> عن طريق الدالة <strong class="font-Open-Sans-400">system</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p010.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_426391" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">system(</code><code class="ruby string">"dir"</code><code class="ruby plain">)</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default last">
+  <div class="panel-body">
+    <p>و بالتأكيد سيكون ناتج تنفيذ المثال <strong class="font-Open-Sans-400">p010.rb</strong> نفس ناتج تنفيذ المثال <strong class="font-Open-Sans-400">p009.rb</strong> .</p>
+
+    <p class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الأعداد", ruby_tutorial_numbers_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "المتغيرات", ruby_tutorial_variables_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <title><%= @title %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-inverse
+                    set-margin-to-zero
+                    set-radius-to-zero
+                    set-border-top-to-zero
+                    set-border-right-to-zero
+                    set-border-left-to-zero" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header navbar-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scroll-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <%= link_to sanitize('روبي عربي | <small class="font-DroidKufi-Regular">بدايتك ستكون معنا</small>'), ruby3arabi_welcome_path, class: "navbar-brand font-DroidKufi-Bold" %>
+            </div>
+
+            <div class="collapse navbar-collapse" id="scroll-navbar">
+              <ul class="nav navbar-nav navbar-left">
+                <% if browser.mobile? %>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"welcome") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-home" aria-hidden="true"></span> . الرئيسية'), ruby3arabi_welcome_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"ruby_tutorial") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-book" aria-hidden="true"></span> . دروس روبي'), ruby_tutorial_index_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"try_ruby") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-send" aria-hidden="true"></span> . جرب روبي'), ruby3arabi_try_ruby_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"about") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> . عن روبي عربي'), ruby3arabi_about_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                <% else %>
+                 <li <%= "class=active" if check_active_tap(@active_tap,"about") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> . عن روبي عربي'), ruby3arabi_about_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"try_ruby") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-regular-embed_close" aria-hidden="true"></span> . جرب روبي'), ruby3arabi_try_ruby_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"ruby_tutorial") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-book" aria-hidden="true"></span> . دروس روبي'), ruby_tutorial_index_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                  <li <%= "class=active" if check_active_tap(@active_tap,"welcome") %>>
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-home" aria-hidden="true"></span> . الرئيسية'), ruby3arabi_welcome_path, class: "font-DroidKufi-Regular" %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="col-md-8 col-md-offset-2">
+          <%= yield %>
+        </div>
+
+        <div id="footer" class="panel panel-default set-radius-to-zero">
+          <div class="panel-body text-center font-Open-Sans-600">
+            <%= link_to 'سياسة الخصوصية', ruby3arabi_privacy_path, class: "font-DroidKufi-Regular" %> | © 2014 <strong>Ruby3araby.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

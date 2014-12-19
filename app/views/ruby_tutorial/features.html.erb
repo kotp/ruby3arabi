@@ -1,0 +1,176 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "برنامجك الأول", ruby_tutorial_first_program_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الأعداد", ruby_tutorial_numbers_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">مميزات روبي</h2>
+    <p class="lead">بعض مميزات روبي</p>
+
+    <ul class="set-margin-bottom-to-zero lists">
+      <li><strong>ذات تنسيق حر</strong> - يمكنك بدأ كتابة الكود الخاص بك من أي سطر و من أي عمود في محرر نصوصك .</li>
+      <li><strong>حساسة لحالة الأحرف</strong> - في لغة روبي الحروف الكبيره تختلف عن الحروف الكبيره ، بمعنى أن الكلمة المحجوزة <strong class="font-Open-Sans-400">end</strong> ، على سبيل المثال ، هي مختلفة تماماً عن الكلمة المحجوزة <strong class="font-Open-Sans-400">END</strong> .</li>
+      <li><strong>التعليقات</strong> - أي كلام يأتي بعد علامة <strong>#</strong> إلى نهاية السطر الذي يحتوي على العلامة يعتبر تعليق داخل الكود ولا يتم المرور عليه من قبل المفسر ، غير ذلك لتتمكن من عمل تعليقات كبيرة في كود روبي يمكنك ان تقوم في بداية التعليق بكتابة كلمة <strong class="font-Open-Sans-400">begin=</strong> و في نهاية التعليق تقوم بإغلاقه بكلمة <strong class="font-Open-Sans-400">end=</strong> ، و هذا يعمل فقط إذا كانت علامة اليساوي هي أول حرف في كل سطر ، للتوضيح أكثر شاهد المثال التالي ، و كما ستلاحظون رغم أننا سنقوم بطباعة نص على الشاشة إلا أنه لن يظهر مطلقاً لأنه في موقع التعليقات .</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p003.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_636857" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby comments"># puts 'Hello World!'</code></div>
+                  <div class="line number2 index1 alt1">&nbsp;</div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">=</code><code class="ruby keyword">begin</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">puts 'Hello World!'</code></div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">=</code><code class="ruby keyword">end</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_460146" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p003.rb</code></div>
+                <div class="line number2 index1 alt1"><code class="bash plain"> </code></div>
+                <div class="line number4 index3 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <ul class="set-margin-bottom-to-zero lists">
+      <li><strong>الجمل المتقطعة</strong> - تمكنك روبي من كتابة جمل متقطعة على أكثر من سطر ، بمعنى لو أنك تمتلك جملة طويلة و تريد تقسيمها على أكثر من سطر مع إمكانية تشغيل الكود كما هو يمكنك بكل بساطة إضافة علامة <strong>\</strong> إلى نهاية السطر و سيعمل الكود معك بشكل ممتاز ، يمكننا تجربة ذلك على المثال التالي .</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p004.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_638327" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby string">'Ruby language'</code> <code class="ruby plain">\</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">' is interesting'</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_460146" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p004.rb</code></div>
+                <div class="line number2 index1 alt1"><code class="bash plain">Ruby language is interesting</code></div>
+                <div class="line number3 index2 alt2"> </div>
+                <div class="line number4 index3 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <ul class="set-margin-bottom-to-zero lists">
+      <li><strong>الكلمات المحجوزة</strong> - في روبي يوجد حوالي 41 كلمة محجوزة لا يمكنك إستخدامها في أغراض أخرى ، يمكنك الإطلاع عليها عن طريق الضغط <%= link_to "هنا", "http://www.ruby-doc.org/docs/keywords/1.9/", target: "_blank" %> .</li>
+      <li><strong>كل القيم في روبي صحيحة</strong> - تعتبر روبي كل القيم سواء كان نص فارغ او القيمة صفر او عدد سالب صحيحة ، كل شيء في روبي صحيح فيما عدا الكلمتان المحجوزتان <strong class="font-Open-Sans-400">nil</strong> , <strong class="font-Open-Sans-400">false</strong> .</li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-danger last">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>تتوفر روبي على وثائق تشرح مميزات اللغة بشكل مفصل وكيفية استخدامها ، يمكنك زيارتها عن طريق الضغط <%= link_to "هنا", "http://www.ruby-doc.org/", target: "_blank" %></p>
+
+    <p class="set-margin-bottom-to-zero text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "برنامجك الأول", ruby_tutorial_first_program_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الأعداد", ruby_tutorial_numbers_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

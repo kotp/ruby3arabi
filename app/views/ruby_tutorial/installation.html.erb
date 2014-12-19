@@ -1,0 +1,89 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "المقدمة", ruby_tutorial_introduction_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "برنامجك الأول", ruby_tutorial_first_program_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">التنصيب</h2>
+    <p class="lead">ما هي روبي ؟</p>
+
+    <p>روبي هي لغة برمجة متعددة المنصات ، مفسرة  و كائنية التوجه - <strong class="font-Open-Sans-400">OOP</strong> - . تم تصميم روبي على مبدأ البساطة ، السهولة ، التقليل من الجهد و سرعة الإنتهاء من العمل .</p>
+
+    <p>يقول <strong class="font-Open-Sans-400">Mats</strong> : "أردت تقليل إحباطي خلال البرمجة و تقليل جهدي المبذول خلالها ، كان هذا هدفي الرئيسي من تصميم لغة روبي ، أريد أن أستمتع خلال برمجتي بها ، و بعد إطلاقي لها و إنتشارها و إستعمال العديد من الناس لها شعروا بنفس الشعور الذي أشعر به والذي كنت أبحث عنه وهو البساطة" .</p>
+
+    <p class="set-margin-bottom-to-zero">في عام 2004 شهدت روبي قفزة هائلة و هي إطلاق <strong class="font-Open-Sans-400">Ruby on Rails</strong> وهو إطار عمل مبني فوق لغة روبي لتصميم وبرمجة تطبيقات الإنترنت بواسطة <strong class="font-Open-Sans-400">David Heinemeier Hansson</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero"><strong class="font-Open-Sans-400">Yukihiro Matsumoto</strong> المعروف باسم <strong class="font-Open-Sans-400">Mats</strong> صمم لغة روبي عام 1993 ، و <%= link_to "هذه المقابلة معه", "http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html" %> في عام 2001 ، يتحدث فيها عن تاريخ روبي .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="lead">تنزيل روبي</p>
+
+    <p>مثل العديد من لغات البرمجة مفتوحة المصدر ، روبي يمكنها العمل على العديد من المنصات و البنى المختلفة ،
+    وهذا يعني انك إذا قمت بتطوير برنامج بإستخدام روبي على منصة ويندوز فهذا البرنامج سيعمل بدون تغيير في الكود على جميع المنصات الأخرى .</p>
+
+    <p>أي أنه يمكنك إستخدام روبي بشكل أو بآخر على معظم أنظمة التشغيل و المنصات .</p>
+
+    <p>وكما ذكرت على الرغم من أننا سنتحدث عن روبي على منصة ويندوز ، <strong>فهذه الدروس يمكنك تطبيقها بالنسبة لمستخدمي لينكس و ماك</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">أبسط طريقة للحصول على نسخة روبي مثبته على حاسوبك هي بإستخدام <strong class="font-Open-Sans-400"><%= link_to "Ruby Installer", "http://rubyinstaller.org/" %></strong> لمنصة ويندوز وكما ذكرت أيضاً يمكنك استخدام أي نسخة من نسخ روبي أعلى من النسخة <strong>1.9.3</strong> ، بعد أن تقوم بالتنزيل قم بالضغط على الملف مرتين و قم بتثبيت روبي على حاسوبك .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أثناء التثبيت ستظهر لك هذه الخيارات يفضل أن تقوم بوضع العلامات عليها كما هو موضع في الصورة .</p>
+
+    <center>
+      <%= image_tag("installation-1.png", alt: "installation-1.png", class: "img-responsive transition img-border") %>
+    </center>
+  </div>
+</div>
+
+<div class="panel panel-default last">
+  <div class="panel-body">
+    <p>اما بالنسبة للمحرر يمكنك إستخدام أي محرر نصوص عادي وعلى سبيل المثال :</p>
+
+    <center>
+      <div style="width: 300px;">
+        <div class="list-group set-padding-right-to-zero">
+          <%= link_to sanitize('<strong class="font-Open-Sans-400">Textmate</strong>'), "https://github.com/textmate/textmate", class: "list-group-item", target: "_blank" %>
+          <%= link_to sanitize('<strong class="font-Open-Sans-400">Sublime Text</strong>'), "http://www.sublimetext.com/", class: "list-group-item", target: "_blank" %>
+          <%= link_to sanitize('<strong class="font-Open-Sans-400">Atom</strong>'), "https://atom.io/", class: "list-group-item", target: "_blank" %>
+          <%= link_to sanitize('<strong class="font-Open-Sans-400">Vim</strong>'), "http://www.vim.org/", class: "list-group-item", target: "_blank" %>
+          <%= link_to sanitize('<strong class="font-Open-Sans-400">Emacs</strong>'), "http://www.gnu.org/software/emacs/", class: "list-group-item", target: "_blank" %>
+        </div>
+      </div>
+    </center>
+
+    <p>بعد التثبيت لتتمكن من تنفيذ أكواد روبي تحتاج لأن تقوم بفتح <strong class="font-Open-Sans-400">interactive Ruby</strong> الذي غالباً ستجد أن روبي قد قام بتثبيته على شريط المهام ، غير ذلك إذا لم يكن على شريط المهام يمكنك البحث عنه من خلال قائمة إبدأ في الويندوز 7 أو محرك بحث ويندوز 8 بكتابة <strong class="font-Open-Sans-300">ruby</strong> و ستظهر لك في نتائج البحث ، أيضاً إن لم يظهر يمكنك التوجه إلى القرص الأساسي في نظام تشغيلك و البحث عن مجلد <strong class="font-Open-Sans-400">ruby 193 , 200 , 201</strong> حسب الإصدار الذي قمت بتثبيته بعد ذلك تتوجه إلى مجلد <strong class="font-Open-Sans-400">bin</strong> داخل مجلد روبي الاساسي و ستجد <strong class="font-Open-Sans-300">interactive Ruby</strong> تحت مسمى <strong class="font-Open-Sans-400">irb.bat</strong> .</p>
+
+    <p>الأن يمكنك تشغيل ملف <strong class="font-Open-Sans-300">irb.bat</strong> و المباشرة بكتابة أكواد روبي كما شاهدنا في المقدمة .</p>
+
+    <p>هناك طريقة أخرى لتشغيل أكواد روبي و هي عن طريق المحرر الذي تستخدمه إذا كان يدعم عملية بناء الكود مثل محرر <strong class="font-Open-Sans-400">Sublime Text 3</strong> الذي أكتب لك منه الأن و هو محرر بسيط ، مفتوح المصدر و مجاني لكن يمتلك أداء رائع جدا .</p>
+
+    <p>إذا كنت تستخدم نظام تشغيل لينكس أو ماك و تحتاج نسخة روبي للتحميل ، يمكنك الضغط <%= link_to "هنا", "https://www.ruby-lang.org/en/downloads/" %> وتحميل ما تحتاج له من نسخ روبي على منصة التشغيل التي تفضل .</p>
+
+    <p>الأن بعد تثبيت نسخة روبي الخاصة بك و إختيار محررك المفضل ، لننطلق إلى تنفيذ أول برنامج لنا .</p>
+
+    <p class="set-margin-bottom-to-zero text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "المقدمة", ruby_tutorial_introduction_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "برنامجك الأول", ruby_tutorial_first_program_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

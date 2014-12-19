@@ -1,0 +1,123 @@
+<div class="panel panel-default alone">
+  <div class="panel-body">
+    <h1 id="title">عن روبي عربي</h1>
+
+    <p>عندما فكرنا في إنشاء موقع <strong>روبي عربي</strong> كان هدفه الأساسي هو توفير المعرفة الغير متوفرة في المحتوى العربي بهذه اللغة الرائعة لغة روبي ولكن لم يكن لدينا المادة الأساسية للموقع وأثناء البحث عن مراجع و دروس لهذه اللغة وجدنا موقع <strong><%= link_to "RubyLearning", "http://rubylearning.com/", class: "font-Open-Sans-700", target: "_blank" %></strong> لصاحبه <span class="font-Open-Sans-700">Satish Talim</span> و قررنا ترجمة هذا الموقع ليكون هو الأول من نوعه في المحتوى العربي ، وبعد مراسلة السيد <span class="font-Open-Sans-700">Satish Talim</span> تمت الموافقة على المقترح و دعمه بشكل كامل .</p>
+
+    <p>و ما تراه الأن هو ثمرة مجهود فريق الموقع فنتمنى لكم الإستفادة منه ، و نتمنى إيصال رسالتنا بهذا الموقع الصغير و أن نتمكن من تطويره أكثر ليكون حقاً أول مجتمع عربي يهتم بلغة روبي و ما يتبعها .</p>
+
+    <p>هذا المشروع مجاني و سيبقى مجاني لذلك نتمنى منك عزيزي الزائر دعمنا بنشر الموقع لكل من هو مهتم بمجال البرمجة لتنتشر هذه اللغة الرائعة أكثر بمحتوانا العربي ، وما زكاة العلم إلا نشره .</p>
+
+    <br>
+
+    <h3 id="title">المؤسسون</h3>
+
+    <div class="row">
+      <div class="col-md-6">
+        <center>
+          <div class="main-img img-circle img-border transition">
+            <%= image_tag("about/about-ridah.jpg", alt: "رضا عمر", height: "190", class: "img-responsive") %>
+            <div class="img-name">
+              <p class="set-margin-bottom-to-zero">رضا عمر</p>
+              <p>
+                <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Libroo", target: "_blank" %>
+                <%= mail_to 'labbar_2010@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+              </p>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="col-md-6">
+        <center>
+          <div class="main-img img-circle img-border transition">
+            <%= image_tag("about/about-ali.jpg", alt: "علي حمدي", height: "190", class: "img-responsive") %>
+            <div class="img-name">
+              <p class="set-margin-bottom-to-zero">علي حمدي</p>
+              <p>
+                <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Ali.L.Malak", target: "_blank" %>
+                <%= mail_to 'AliOsm1997@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+              </p>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <br>
+
+    <h3 id="title">بالتعاون مع</h3>
+
+    <div class="row">
+      <div class="col-md-12">
+        <center>
+          <div class="main-img img-circle img-border transition">
+            <%= image_tag("about/about-yags.png", alt: "مهووسي شباب العرب", height: "190", class: "img-responsive") %>
+            <div class="img-name">
+              <p class="set-margin-bottom-to-zero">مهووسي شباب العرب</p>
+              <p>
+                <%= mail_to 'YAGeekS@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+                <%= link_to sanitize('<span class="social-youtube youtube"></span>'), "http://www.youtube.com/YoungArabGeekS", target: "_blank" %>
+              </p>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <br>
+
+    <h3 id="title">شكر خاص لكل من</h3>
+
+    <p>تتوجهة أسرة موقع <strong>روبي عربي</strong> بكل الشكر و التقدير لكل من ساهم في إنجاح هذه الفكرة و من أعطى رأيه بشأن الموقع وساعد في تنقيح محتوى الموقع و التدقيق على كل صغيرة و كبيرة داخله و هم :</p>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-3 col-md-offset-2">
+        <center>
+          <div class="thank-img img-circle img-border transition">
+            <%= image_tag("about/" + @list[@sort_list[0]][0], alt: @list[@sort_list[0]][1], height: "115", class: "img-responsive") %>
+            <div class="thank-name"><p <%= "class=font-Open-Sans-400" if @list[@sort_list[0]][1] == "Satish Talim" %>><%= @list[@sort_list[0]][1] %></p></div>
+          </div>
+        </center>
+      </div>
+      <div class="col-md-3 col-md-offset-2">
+        <center>
+          <div class="thank-img img-circle img-border transition">
+            <%= image_tag("about/" + @list[@sort_list[1]][0], alt: @list[@sort_list[1]][1], height: "115", class: "img-responsive") %>
+            <div class="thank-name"><p <%= "class=font-Open-Sans-400" if @list[@sort_list[1]][1] == "Satish Talim" %>><%= @list[@sort_list[1]][1] %></p></div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-4">
+        <center>
+          <div class="thank-img img-circle img-border transition">
+            <%= image_tag("about/" + @list[@sort_list[4]][0], alt: @list[@sort_list[4]][1], height: "115", class: "img-responsive") %>
+            <div class="thank-name"><p <%= "class=font-Open-Sans-400" if @list[@sort_list[4]][1] == "Satish Talim" %>><%= @list[@sort_list[4]][1] %></p></div>
+          </div>
+        </center>
+      </div>
+      <div class="col-md-4">
+        <center>
+          <div class="thank-img img-circle img-border transition">
+            <%= image_tag("about/" + @list[@sort_list[3]][0], alt: @list[@sort_list[3]][1], height: "115", class: "img-responsive") %>
+            <div class="thank-name"><p <%= "class=font-Open-Sans-400" if @list[@sort_list[3]][1] == "Satish Talim" %>><%= @list[@sort_list[3]][1] %></p></div>
+          </div>
+        </center>
+      </div>
+      <div class="col-md-4">
+        <center>
+          <div class="thank-img img-circle img-border transition">
+            <%= image_tag("about/" + @list[@sort_list[2]][0], alt: @list[@sort_list[2]][1], height: "115", class: "img-responsive") %>
+            <div class="thank-name"><p <%= "class=font-Open-Sans-400" if @list[@sort_list[2]][1] == "Satish Talim" %>><%= @list[@sort_list[2]][1] %></p></div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>

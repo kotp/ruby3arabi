@@ -1,0 +1,44 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <h1 id="title">جرب روبي</h1>
+    <p class="lead set-margin-bottom-to-zero">حاول الإستمتاع بتجربة روبي على موقعنا</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular"><a id="submit-button" class="btn btn-info font-DroidKufi-Bold" href="#">نفذ</a> ..... قم بكتابة الكود هنا بعد ذلك</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div id="code-form">
+      <div class="set-direction-ltr">
+        <div id="editor-container">
+          <div id="editor" style="font-family: 'Ubuntu Mono' !important; font-size: 14px;">puts "Ruby3arabi"</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+      var editor = ace.edit("editor");
+      editor.setTheme("ace/theme/monokai");
+      editor.getSession().setMode("ace/mode/ruby");
+      editor.getSession().setTabSize(2);
+    </script>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div id="output" class="set-direction-ltr" style="font-family: 'Ubuntu Mono' !important; font-size: 15px; color: white; background-color: black;">
+      Ruby3arabi
+      <br>
+      nil
+    </div>
+
+  </div>
+</div>
