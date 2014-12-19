@@ -1,7 +1,4 @@
 Rails.application.configure do
-  config.assets.debug = true
-  config.assets.raise_runtime_errors = true
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
