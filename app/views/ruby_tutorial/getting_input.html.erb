@@ -1,0 +1,83 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "المجالات", ruby_tutorial_scope_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الأسماء", ruby_tutorial_names_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">الحصول على المدخلات</h2>
+
+    <p class="set-margin-bottom-to-zero">في دروسنا السابقة تعاملنا فقط مع المخرجات و طباعة بعض الجمل و الكلكمات على الشاشة ، لكن كيف يمكن لنا أن نستقبل المدخلات من المستخدم ؟ ، لفعل ذلك نستخدم الدالة <strong class="font-Open-Sans-400">gets</strong> أيضاً سنستخدم معها <strong class="font-Open-Sans-400">chomp</strong> ، البرنامج التالي يوضح كيفية إستخدام الدوال المذكورة .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p012.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_862157" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby string">"In which city do you stay ?"</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby constants">STDOUT</code><code class="ruby plain">.flush</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">city = gets.chomp</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">puts </code><code class="ruby string">"The city is "</code> <code class="ruby plain">+ city</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_316670" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p012.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">In which city do you stay ?</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">Benghazi</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">The city is Benghazi</code></div>
+                  <div class="line number5 index4 alt2">&nbsp;</div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

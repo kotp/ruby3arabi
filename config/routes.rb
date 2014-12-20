@@ -21,6 +21,8 @@ Rails.application.routes.draw do
 
   get 'ruby_tutorial/getting_input'
 
+  get 'ruby_tutorial/names'
+
   get 'ruby3arabi/welcome'
 
   get 'ruby3arabi/about'
