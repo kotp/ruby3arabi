@@ -1,0 +1,44 @@
+<div class="panel panel-default alone">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الملخص الأول", ruby_tutorial_summary_1_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">المجالات</h2>
+
+    <p>يقصد بالنطاقات هي إمكانية رؤية المتغير ، أنواع عديدة من المتغيرات لها قواعد لتحديد مجال النطاق الخاص بها ، سنتحدث بصورة رئيسية عن نوعين منها : المتغيرات العامة و المتغيرات المحلية .</p>
+
+    <p class="lead">النطاق العام و المتغيرات العامة</p>
+
+    <p>بدأنا في الحديث عن النطاق الأقل إستخداماً في مشاريعك ، ولكنها أيضاً مهمة ، نقصد بالنطاق العام أن المتغير يمكن الوصول إليه أو رؤيته في جميع انحاء المشروع .</p>
+
+    <p>تختلف شروط تعريف متغير عام عن متغير عادي أو محلي ، في المتغير العام يجب أن يسبق اسم المتغير بعلامة الدولار ($) ، و بذلك تعطي الصلاحية لكل المشروع أن يرى و يتعامل مع هذا المتغير ، المتغيرات العامة قليلة الإستخدام من قبل المبرمجين ذوي الخبرة في مجالهم ( بإستثناء عدد قليل من المتغيرات العامة المضمنة ) .</p>
+
+    <p class="lead">المتغيرات العامة المضمنة</p>
+
+    <p>مفسر روبي يبدأ تشغيل أي مشروع مع عدد كبير نسبياً من المتغيرات العامة المضمنة تلقائياً داخل اللغة ، هذه المتغيرات تخزن بعض المعلومات التي يحتمل إستخدامها في أي مكان و زمان داخل المشروع ، كمثال لذلك المتغير العام $0 ، هذا المتغير يحتفظ داخله على مسار الملف الذي يتم تنفيذ المشروع منه ، والمتغير $: الذي يحتوي على مسار كل المجلدات داخل مجلد تنصيب روبي الاساسي ، و يوجد الكثير من هذه المتغيرات العامة في روبي .</p>
+
+    <p class="lead">النطاق المحلي</p>
+
+    <p><strong>تلميح</strong> : لا تهتم إن لم تفهم ذلك حالياً .</p>
+    <p>يمكننا شرح المجال الخاص بالمتغيرات المحلية في النقاط التالية :</p>
+
+    <ul class="lists">
+      <li>المتغيرات التي يتم تعريفها في بداية البرنامج ، لها نطاقها المحلي الخاص بها .</li>
+      <li>المتغيرات التي يتم تعريفها داخل <strong class="font-Open-Sans-300">class , module</strong> يكون لها النطاق المحلي الخاص بها داخلها .</li>
+      <li>المتغيرات التي يتم تعريفها داخل أي دالة يكون لها النطاق المحلي الخاص بها .</li>
+    </ul>
+
+    <p class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الملخص الأول", ruby_tutorial_summary_1_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>

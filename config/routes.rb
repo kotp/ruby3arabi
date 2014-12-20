@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'ruby_tutorial/scope'
 
+  get 'ruby_tutorial/getting_input'
+
   get 'ruby3arabi/welcome'
 
   get 'ruby3arabi/about'
