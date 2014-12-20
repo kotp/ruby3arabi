@@ -13,34 +13,66 @@
     <h3 id="title">المؤسسون</h3>
 
     <div class="row">
-      <div class="col-md-6">
-        <center>
-          <div class="main-img img-circle img-border transition">
-            <%= image_tag("about/about-ridah.jpg", alt: "رضا عمر", height: "190", class: "img-responsive") %>
-            <div class="img-name">
-              <p class="set-margin-bottom-to-zero">رضا عمر</p>
-              <p>
-                <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Libroo", target: "_blank" %>
-                <%= mail_to 'labbar_2010@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
-              </p>
+
+      <% if browser.mobile? %>
+        <div class="col-md-6">
+          <center>
+            <div class="main-img img-circle img-border transition">
+              <%= image_tag("about/about-ali.jpg", alt: "علي حمدي", height: "190", class: "img-responsive") %>
+              <div class="img-name">
+                <p class="set-margin-bottom-to-zero">علي حمدي</p>
+                <p>
+                  <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Ali.L.Malak", target: "_blank" %>
+                  <%= mail_to 'AliOsm1997@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+                </p>
+              </div>
             </div>
-          </div>
-        </center>
-      </div>
-      <div class="col-md-6">
-        <center>
-          <div class="main-img img-circle img-border transition">
-            <%= image_tag("about/about-ali.jpg", alt: "علي حمدي", height: "190", class: "img-responsive") %>
-            <div class="img-name">
-              <p class="set-margin-bottom-to-zero">علي حمدي</p>
-              <p>
-                <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Ali.L.Malak", target: "_blank" %>
-                <%= mail_to 'AliOsm1997@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
-              </p>
+          </center>
+        </div>
+        <div class="col-md-6">
+          <center>
+            <div class="main-img img-circle img-border transition">
+              <%= image_tag("about/about-ridah.jpg", alt: "رضا عمر", height: "190", class: "img-responsive") %>
+              <div class="img-name">
+                <p class="set-margin-bottom-to-zero">رضا عمر</p>
+                <p>
+                  <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Libroo", target: "_blank" %>
+                  <%= mail_to 'labbar_2010@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+                </p>
+              </div>
             </div>
-          </div>
-        </center>
-      </div>
+          </center>
+        </div>
+      <% else %>
+        <div class="col-md-6">
+          <center>
+            <div class="main-img img-circle img-border transition">
+              <%= image_tag("about/about-ridah.jpg", alt: "رضا عمر", height: "190", class: "img-responsive") %>
+              <div class="img-name">
+                <p class="set-margin-bottom-to-zero">رضا عمر</p>
+                <p>
+                  <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Libroo", target: "_blank" %>
+                  <%= mail_to 'labbar_2010@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+                </p>
+              </div>
+            </div>
+          </center>
+        </div>
+        <div class="col-md-6">
+          <center>
+            <div class="main-img img-circle img-border transition">
+              <%= image_tag("about/about-ali.jpg", alt: "علي حمدي", height: "190", class: "img-responsive") %>
+              <div class="img-name">
+                <p class="set-margin-bottom-to-zero">علي حمدي</p>
+                <p>
+                  <%= link_to sanitize('<span class="social-facebook facebook"></span>'), "http://www.facebook.com/Ali.L.Malak", target: "_blank" %>
+                  <%= mail_to 'AliOsm1997@gmail.com', sanitize('<span class="social-e-mail e-mail"></span>'), target: "_blank" %>
+                </p>
+              </div>
+            </div>
+          </center>
+        </div>
+      <% end %>
     </div>
 
     <br>

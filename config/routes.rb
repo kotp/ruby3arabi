@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   get 'ruby_tutorial/names'
 
+  get 'ruby_tutorial/methods'
+
   get 'ruby3arabi/welcome'
 
   get 'ruby3arabi/about'

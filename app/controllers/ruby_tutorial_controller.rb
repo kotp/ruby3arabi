@@ -60,4 +60,9 @@ class RubyTutorialController < ApplicationController
     @title = "دروس روبي | الأسماء"
     @active_tap = "ruby_tutorial"
   end
+
+  def methods
+    @title = "دروس روبي | الطرق"
+    @active_tap = "ruby_tutorial"
+  end
 end
