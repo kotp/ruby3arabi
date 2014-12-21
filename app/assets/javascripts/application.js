@@ -18,4 +18,5 @@
 //= require shCore.js
 //= require shBrushRuby.js
 //= require shBrushBash.js
+//= require events.js
 //= require_tree .
