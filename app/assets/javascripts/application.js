@@ -18,4 +18,6 @@
 //= require shCore.js
 //= require shBrushRuby.js
 //= require shBrushBash.js
+//= require events.js
+//= require webruby.js
 //= require_tree .
