@@ -14,12 +14,12 @@
 
     <p class="lead">المتغيرات</p>
 
-    <p>المتغيرات في روبي يمكنها أن تحتوي أي نوع من البيانات ، يمكنك إستخدام المتغيرات في برنامجك على روبي بدون أي حاجه لكتابة كلمة مفتاحية أو كتابة تنسيق نحوي معين للتعريف ، أسماء المتغيرات في روبي هي نفسها التي تحدد المجال الخاص بهذا المتغير ( محلي ، عام ، الحالية ... إلخ ) .</p>
+    <p>المتغيرات في روبي يمكنها أن تحتوي أي نوع من البيانات ، يمكنك إستخدام المتغيرات في برنامجك على روبي بدون أي حاجه لكتابة كلمة مفتاحية أو كتابة تنسيق نحوي معين للتعريف ، أسماء المتغيرات في روبي هي نفسها التي تحدد المجال الخاص بهذا المتغير ( محلي ، عام ، متغيرات الحالة ... إلخ ) .</p>
 
     <ul class="lists">
       <li>المحلية ( <strong class="font-Open-Sans-300">local</strong> ) - ( يعرف ضمن كائن ) يتكون اسمه من حروف صغيرة أو شرطة صغيرة متبوعة بالاسم ( <strong class="font-Open-Sans-300">benghazi , hit_and_run , _a</strong> ) .</li>
-      <li>الحالية ( <strong class="font-Open-Sans-300">instance</strong> ) - ( يعرف ضمن كائن ينتمي دائما لفئة معينة ) اسمه يبدأ بعلامة (@) يتبعه اسم المتغير ( <strong class="font-Open-Sans-300">sign , @_ , @var@</strong> ) .</li>
-      <li>متغيرات الفئة ( <strong class="font-Open-Sans-300">class variables</strong> ) - ( يعرف ضمن فئة ) اسمه يبدأ بإثنان من العلامة (@) على هذا النحو (@@) يتبعه اسم المتغير "شبيه إلى حد ما بالمتغيرات الحالية" ( <strong class="font-Open-Sans-300">sign , @@_ , @@var@@</strong> ) ، متغير الفئة يتم مشاركته مع كل الكائنات من هذه الفئة ، نسخة واحدة منه تحتفظ بقيمتها بالنسبة لكل الكائنات ، <em>جدير بالذكر أن متغيرات الفئة قليلة الإستخدام في برامج روبي</em> .</li>
+      <li>متغيرات الحالة ( <strong class="font-Open-Sans-300">instance</strong> ) - ( يعرف ضمن كائن ينتمي دائما لفئة معينة ) اسمه يبدأ بعلامة (@) يتبعه اسم المتغير ( <strong class="font-Open-Sans-300">sign , @_ , @var@</strong> ) .</li>
+      <li>متغيرات الفئة ( <strong class="font-Open-Sans-300">class variables</strong> ) - ( يعرف ضمن فئة ) اسمه يبدأ بإثنان من العلامة (@) على هذا النحو (@@) يتبعه اسم المتغير "شبيه إلى حد ما بمتغيرات الحالة" ( <strong class="font-Open-Sans-300">sign , @@_ , @@var@@</strong> ) ، متغير الفئة يتم مشاركته مع كل الكائنات من هذه الفئة ، نسخة واحدة منه تحتفظ بقيمتها بالنسبة لكل الكائنات ، <em>جدير بالذكر أن متغيرات الفئة قليلة الإستخدام في برامج روبي</em> .</li>
       <li>العامة ( <strong class="font-Open-Sans-300">global</strong> ) - تبدأ بعلامة ($) متبوعة بالاسم ، ويمكنك تشكيله بإستخدام "$-" متبوعة بحرف واحد ( <strong class="font-Open-Sans-300">counter, $COUNTER, $-x$</strong> ) ، روبي قامت بتعريف متغيرات عامة كثيرة مثل <strong class="font-Open-Sans-300">_$</strong> و <strong class="font-Open-Sans-300">K-$</strong> .</li>
     </ul>
 
@@ -29,6 +29,228 @@
 
     <p class="lead">أسماء الطرق</p>
 
-    <p>يجب أن تبدأ أسماء الطرق بحرف صغير أو شرطة سفلية (_) ، "؟" ، "!" و "=" متاحة أثناء تسمية الطرق ، وهذه العلامات هي الوحيدة المتاحة كنهاية لاسم الطريقة  .</p>
+    <p class="set-margin-bottom-to-zero">يجب أن تبدأ أسماء الطرق بحرف صغير أو شرطة سفلية (_) ، "؟" ، "!" و "=" متاحة أثناء تسمية الطرق ، وهذه العلامات هي الوحيدة المتاحة كنهاية لاسم الطريقة ( الطرق التي تنتهي بالعلامة "!" يجب الإنتباه لها فهي أحياناً قد تكون خطيرة ، و السبب يرجع إلى أنه كل الطرق التي تمتلك هذه العلامة يوجد لها طرق أخرى بدون العلامة ، سنتكلم عن هذه الطرق و الإختلاف بينها فيما بعد ) .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أ - إتفق مبرمجوا روبي ، عند تسمية أي متغير كان أو أي طريقة أن يتم فصل كلماتها بشرطة سفلية (_) ، على عكس العديد من اللغات الأخرى التي غالباً يستخدمون الحروف الكبيرة لفصل كلمات اسم المتغير ، أيضاً اتفقوا عند تسمية الثوابت على أن تكون حروفها كلها كبيرة و يفصل بين كلمات اسم المتغير بشرطة سفلية (_) كمثال : <strong class="font-Open-Sans-400">CONSTANT_VARIABLE</strong> ، وكما سبق ذكره أن أسماء الفئات و الوحدات هي ايضاً ثوابت لكن نظام تسميتها يختلف بعض الشيء ، حيث أنه عندما تريد تسمية فئة معينة أو وحدة يكون أول حرف من كل كلمة كبير و باقي الأحره صغيرة و لا يفصل بين الكلمات بأي شيء ، كمثال : <strong class="font-Open-Sans-400">ClassBenghazi , ModuleLibya</strong> .</p>
+
+    <p class="set-margin-bottom-to-zero">ب - جدير بالذكر أنه عندما تقوم بتعريف أي متغير في روبي و تقوم بإعطائه قيمة إبتدائية نصية على سبيل المثال ( أو لا تقوم بإعطاءه أي قيمة ) ، يمكنك أثناء تشغيل البرنامج أن تغير نوع بيانات هذا المتغير و أن تحفظ فيه أي نوع أخر سواء كانت أعداد صحيحة أو أعداد عشرية أو مصفوفات ، فالمتغيرات ما هي إلا مراجع تشير إلى كائنات في الذاكرة و عندما يتم تغيير قيمتها فإنه يتم تغيير قيمة هذا الكائن ، على عكس الثوابت فهي أيضاً مراجع للإشارة لكائن معين في الذاكرة ( عادة يتم تعريف الثوابت داخل الفئات أو الوحدات ، ليس داخل الطرق و الدوال ) و لكن عندما يتم تغيير قيمة الثابت فإنه لا يتم تغيير قيمة هذا الكائن ، بل يتم إنشاء كائن جديد و يبقى الكائن القديم في الذاكرة إلى نهاية تنفيذ البرنامج ( ستحصل على رسالة تحذير عندما يتم تغيير قيمة أحد الثوابت في البرنامج ، تخبرك بأنه سيتم تغيير قيمة هذا المتغير و لكن إحذر فإنه من الثوابت في برنامجك ) ، وهذا هو الفرق بين المتغيرات و الثوابت .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">البرنامج التالي يوضح قدرة متغيرات روبي على التوافق مع أي نوع بيانات تريد تخزينه فيها .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p013.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_442771" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">x = </code><code class="ruby constants">5</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code class="ruby comments"># integer</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts x</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby plain">x = </code><code class="ruby string">"house"</code> <code class="ruby comments"># string</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">puts x</code></div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">x = </code><code class="ruby constants">5</code><code class="ruby plain">.</code><code class="ruby constants">3</code>&nbsp;&nbsp;&nbsp;&nbsp; <code class="ruby comments"># float</code></div>
+                  <div class="line number6 index5 alt1"><code class="ruby plain">puts x</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_871082" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p013.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">5</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">house</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">5.3</code></div>
+                  <div class="line number5 index4 alt2">&nbsp;</div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>أنواع البيانات الرئيسية في روبي هي :</p>
+
+    <center>
+      <div style="width: 300px;">
+        <ul class="list-group set-padding-right-to-zero set-margin-bottom-to-zero">
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading text-left"><strong class="font-Open-Sans-400">Numeric</strong></h4>
+            <p class="list-group-item-text text-right">تشمل الأنواع الفرعية <strong class="font-Open-Sans-400">Fixnum , Integer</strong> و <strong class="font-Open-Sans-400">Float</strong></p>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">String</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">Array</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">Hash</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">Object</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">Symbol</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">Range</strong>
+          </li>
+          <li class="list-group-item">
+            <strong class="font-Open-Sans-400">RegExp</strong>
+          </li>
+        </ul>
+      </div>
+    </center>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>رغم أننا لم ندرس الفئات بعد ، يجب أن نطلع على بعض التفاصيل التي تخش الفئة <strong class="font-Open-Sans-400">Float</strong> .</p>
+
+    <p><strong class="font-Open-Sans-400">Float</strong> هو فئة فرعية من الفئة <strong class="font-Open-Sans-400">Numeric</strong> .</p>
+
+    <p>الكائنات من نوع <strong class="font-Open-Sans-400">Float</strong> تمثل الأعداد العشرية .</p>
+
+    <p><strong class="font-Open-Sans-400">DIG</strong> هو ثابت داخل الفئة <strong class="font-Open-Sans-400">Float</strong> والذي يمثل عدد الأرقام بعد العلامة العشرية ( دقة الرقم العشري ) ، <strong class="font-Open-Sans-400">MAX</strong> وهو ثابت أخر داخل الفئة <strong class="font-Open-Sans-400">Float</strong> وهو يعطي أكبر رقم عشري يمكن التعامل معه في روبي ( يمكنك معرفة جميع الثوابت داخل الفئة <strong class="font-Open-Sans-400">Float</strong> عن طريق إستخدام الدالة <strong class="font-Open-Sans-400">constants</strong> ، كالتالي : <strong class="font-Open-Sans-400">puts Float.constants</strong> ) .</p>
+
+    <p class="set-margin-bottom-to-zero">يمكنك معرفة قيمة أي من الثوابت سواء داخل الفئة <strong class="font-Open-Sans-400">Float</strong> أو داخل فئة أو وحدة أخرى عن طريق طباعة هذا الثابت بإستخدام العملية التي تطرقنا إليها مسبقاً (::) كالتالي : <strong class="font-Open-Sans-400">puts Float::DIG</strong> أو <strong class="font-Open-Sans-400">puts Float::MAX</strong> .</p>
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>روبي أيضاً تقوم بشيء أخر بدلاً عنك ، و هو تحديد نوع بيانات المتغير تلقائياً دون ذكر ذلك أثناء التعريف ، عكس العديد من لغات البرمجة التي تتطلب ذكر نوع بيانات المتغير و الإلتزام بها لهذا المتغير ، فإذا قمت بإسناد قيمة عددية لمتغير معين فهو إذا متغير عددي ، و إذا قمت بإسناد قيمة نصية فهو متغير نصي و هكذا .</p>
+
+    <p class="set-margin-bottom-to-zero">الفئة <strong class="font-Open-Sans-400">Object</strong> تمتلك دالة <strong class="font-Open-Sans-400">class</strong> وهي ترجع نوع البيانات المخزنة داخل هذا المتغير ، كمثال :</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p014.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_670839" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">s = </code><code class="ruby string">'hello'</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts s.</code><code class="ruby keyword">class</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_268011" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; p014.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">String</code></div>
+                  <div class="line number3 index2 alt2">&nbsp;</div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default last">
+  <div class="panel-body">
+    <p>في درسنا القادم سنكمل حديثنا عن الطرق و كيفية تعريفها و التعامل معها ، و سنقوم بتطبيق أول مثال شاهدته عند بداية دراستك في درس <%= link_to "المقدمة", ruby_tutorial_introduction_path %> .</p>
+
+    <p  class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الطرق", ruby_tutorial_methods_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
   </div>
 </div>
