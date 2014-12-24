@@ -30,7 +30,14 @@
       </li>
       <li><strong><%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "index-link" %></strong></li>
       <li><strong><%= link_to "الأسماء", ruby_tutorial_names_path, class: "index-link" %></strong></li>
-      <li><strong><%= link_to "الطرق", ruby_tutorial_methods_path, class: "index-link" %></strong></li>
+      <li><strong><%= link_to "الطرق", ruby_tutorial_methods_path, class: "index-link" %></strong>
+        <ul>
+          <li>طرق العلامة (!)</li>
+          <li>الطرق التي تنتهي بـ (؟)</li>
+        </ul>
+      </li>
+      <li><strong><%= link_to "الملخص الثاني", ruby_tutorial_summary_2_path, class: "index-link" %> <sup><span class="glyphicon glyphicon-star" aria-hidden="true"></span></sup></strong></li>
+      <li><strong><%= link_to sanitize('روبي <strong class="font-Open-Sans-400">ri tool</strong>'), ruby_tutorial_ruby_ri_tool_path, class: "index-link" %></strong></li>
     </ul>
   </div>
 </div>

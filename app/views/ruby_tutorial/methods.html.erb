@@ -1,0 +1,644 @@
+<div class="panel panel-default beginning">
+  <div class="panel-body">
+    <p class="text-left">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الأسماء", ruby_tutorial_names_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الملخص الثاني", ruby_tutorial_summary_2_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+
+    <h2 id="title">الطرق</h2>
+
+    <p>كما يوجد في اللغات التي نتكلمها أسماء ( أشخاص ، أماكن ، أشياء أو أعمال ... ) ، يوجد أيضاً أفعال والتي تمثلها الطرق في لغات البرمجة ، وكل طريقة تحتاج إلى كائن ، قد تطرقنا للمتغيرات و التي تمثل الأسماء الأن سنتطرق للأفعال و هي الطرق .</p>
+
+    <p class="set-margin-bottom-to-zero">سنتعرف على الطرف في البرنامج <strong class="font-Open-Sans-400">p015.rb</strong> ، سنستخدم الكلمة المفتاحية <strong class="font-Open-Sans-400">def</strong> و <strong class="font-Open-Sans-400">end</strong> ، كما أنه قد يوجد متغيرات للطرق ستكون بعد إسم الطريقة بين قوسين كما سنشاهد في برنامجنا .</p>
+  </div>
+</div>
+
+<div class="panel panel-danger middle">
+  <div class="panel-heading">ملاحظة</div>
+  <div class="panel-body">
+    <p>أ - إذا كنت قد تعاملة مع لغات برمجة قبل الأن بالتأكيد تعرف الطرق و كيف أنها ترجع قيمة بعد الإنتهاء من التنفيذ ، في روبي أيضاً الطرق ترجع قيم لكننا لا نستخدم الأمر <strong class="font-Open-Sans-400">return</strong> فالطرق في روبي تعيد القيمة الموجودة في أخر سطر تلقائياً ( مع العلم أنه يمكنك إستخدام الامر <strong class="font-Open-Sans-400">return</strong> ) .</p>
+
+    <p class="set-margin-bottom-to-zero">ب - الأقواس على جانبي متغيرات الطريقة هي إختيارية ، كذلك عند إستدعاء الطريقة فإن الأقواس إختيارية ، خلال برامجنا سنقوم بتجاهل الأقواس عندما تكون الطريقة دون متغيرات أما عند وجودها فسنقوم بكتابتها .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p015.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_983655" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+                <div class="line number9 index8 alt2">9</div>
+                <div class="line number10 index9 alt1">10</div>
+                <div class="line number11 index10 alt2">11</div>
+                <div class="line number12 index11 alt1">12</div>
+                <div class="line number13 index12 alt2">13</div>
+                <div class="line number14 index13 alt1">14</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">hello</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">puts </code><code class="ruby string">'hello'</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number4 index3 alt1"><code class="ruby plain">hello</code></div>
+                  <div class="line number5 index4 alt2">&nbsp;</div>
+                  <div class="line number6 index5 alt1"><code class="ruby keyword">def</code> <code class="ruby plain">hello1(name1)</code></div>
+                  <div class="line number7 index6 alt2"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">'Hello '</code> <code class="ruby plain">+ name1</code></div>
+                  <div class="line number8 index7 alt1"><code class="ruby keyword">end</code></div>
+                  <div class="line number9 index8 alt2"><code class="ruby plain">puts(hello1(</code><code class="ruby string">'Ali'</code>)<code class="ruby plain">)</code></div>
+                  <div class="line number10 index9 alt1">&nbsp;</div>
+                  <div class="line number11 index10 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">hello2 name2</code></div>
+                  <div class="line number12 index11 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">'Hello '</code> <code class="ruby plain">+ name2</code></div>
+                  <div class="line number13 index12 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number14 index13 alt1"><code class="ruby plain">puts hello2 </code><code class="ruby string">'Hamdi'</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_363962" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p015.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">hello</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">Hello Ali</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">Hello Hamdi</code></div>
+                  <div class="line number5 index4 alt2">&nbsp;</div>
+                  <div class="line number6 index5 alt1"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>والأن إلى شرح برنامجنا السابق ، قمنا بتعريف ثلاثة طرق ( <strong class="font-Open-Sans-400">hello , hello1 , hello2</strong> ) الطريقة الأولى و هي التي كانت في المثال بدرس <%= link_to "المقدمة", ruby_tutorial_introduction_path %> وكانت مهمتها أن تطبع كلمة <strong class="font-Open-Sans-400">hello</strong> على الشاشة ، بعد ذلك قمنا بإستدعائها عن طريق كتابة اسمها فقط .</p>
+
+    <p>الطريقة الثانية تحتوي على متغير واحد وهو <strong class="font-Open-Sans-400">name1</strong> وتقوم بإرجاع كلمة <strong class="font-Open-Sans-400">Hello</strong> مع القيمة التي داخل المتغير <strong class="font-Open-Sans-400">name1</strong> ، بعد ذلك قمنا بإستدعاء الطريقة وأرسلنا لها القيمة <strong class="font-Open-Sans-400">Ali</strong> في المتغير <strong class="font-Open-Sans-400">name1</strong> وطبعناها بإستخدام الدالة <strong class="font-Open-Sans-400">puts</strong> .</p>
+
+    <p>الطريقة الثالثة مشابهة تماماً لسابقتها لكن إذا لاحظت لم نستخدم الأقواس في تعريف متغيرات الطريقة ولا عند إستدعائها ، لهذا قلنا أن الأقواس إختيارية في روبي .</p>
+
+    <p class="set-margin-bottom-to-zero">في روبي يمكنك إسناد قيمة إبتدائية لمتغيرات أي طريقة تقوم بتعريفها ، البرنامج التالي يوضح لك هذا الأمر .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p016.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_227881" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">mtd(var1=</code><code class="ruby string">"Libya"</code><code class="ruby plain">, var2=</code><code class="ruby string">"Egypt"</code><code class="ruby plain">, var3=</code><code class="ruby string">"Tunisia"</code><code class="ruby plain">)</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">"#{var1}, #{var2}, #{var3}."</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">puts mtd</code></div>
+                  <div class="line number6 index5 alt1"><code class="ruby plain">puts mtd(</code><code class="ruby string">"Benghazi"</code><code class="ruby plain">)</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_974393" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p016.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">Libya, Egypt, Tunisia.</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">Benghazi, Egypt, Tunisia.</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>تذكر عند إستخدام هذه الطريقة في البرنامج السابق أنك لا تستطيع إستخدام القيمة الإفتراضية للمتغير الاول و إسناد قيمة جديدة للمتغير الثاني .</p>
+
+    <p class="set-margin-bottom-to-zero">أيضاً في البرنامج السابق إستخدمنا شيء جديد في النص الذي قمنا بطباعته وهو التنسيق {...}# ، مفسر روبي عندما يجد هذا التنسيق لا يعتبره جزء من النص و يقوم بتنفيذه بشكل كود عادي ، و كما لاحظتم عندما وضعنا داخل التنسيق {...}# اسم المتغير قام بطباعة قيمته ، المثال التالي يوضح ذلك أكثر .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">#{} إستخدام التنسيق</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_805601" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby string">"100 * 5 = #{100 * 5}"</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_520055" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">100 * 5 = 500</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>الجزء {5 * 100}# في الكود السابق يرجع قيمة العملية الحسابية 5 * 100 على هيئة نص وهي 500 .</p>
+
+    <p class="set-margin-bottom-to-zero">الأن سنتحدث عن شيء يخص الطرق أيضاً وهو الأسماء المستعارة أو <strong class="font-Open-Sans-400">alias</strong> ، وظيفته هي أن تقوم بتغيير اسم طريقة موجودة بالفعل ، البرنامج التالي سيوضح الفكرة أكثر عن الأسماء المستعارة في روبي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p017.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_205596" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+                <div class="line number9 index8 alt2">9</div>
+                <div class="line number10 index9 alt1">10</div>
+                <div class="line number11 index10 alt2">11</div>
+                <div class="line number12 index11 alt1">12</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">oldmtd</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">"old method"</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="ruby keyword">alias</code> <code class="ruby plain">newmtd oldmtd</code></div>
+                  <div class="line number6 index5 alt1">&nbsp;</div>
+                  <div class="line number7 index6 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">oldmtd</code></div>
+                  <div class="line number8 index7 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby string">"old improved method"</code></div>
+                  <div class="line number9 index8 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number10 index9 alt1">&nbsp;</div>
+                  <div class="line number11 index10 alt2"><code class="ruby plain">puts oldmtd</code></div>
+                  <div class="line number12 index11 alt1"><code class="ruby plain">puts newmtd</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_825266" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p017.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">old method</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">old improved method</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>كما شاهدنا في البرنامج السابق قمنا بتعريف طريقتان تحت اسم <strong class="font-Open-Sans-400">oldmtd</strong> ، الأولى ترجع قيمة نصية <strong class="font-Open-Sans-400">old method</strong> والثانية ترجع قمية نصية أيضاً <strong class="font-Open-Sans-400">old improved method</strong> ، لكن بين الطريقتين قمنا بإعادة تسمية للطريقة الأولى من <strong class="font-Open-Sans-400">oldmtd</strong> إلى <strong class="font-Open-Sans-400">newmtd</strong> ، وبالتأكيد لاحظتم الفرق عند إستدعاء الطريقتين .</p>
+
+    <p class="set-margin-bottom-to-zero">الأن سنجاوب على سؤال يخطر على بال العديدين ، ماذا لو كان لديك عدد لا نهائي من المتغيرات التي تريد أن ترسلها إلى الطريقة ، ماذا تفعل ؟ روبي أتاحت لك تعريف متغير يخص الطريقة يستقبل عدد لا نهائي من القيم ، تابع معنا البرنامج التالي عزيزي القارئ .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p018.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_44859" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">foo(*args)</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">args.inspect</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">puts foo(</code><code class="ruby string">'hello'</code><code class="ruby plain">, </code><code class="ruby string">'world'</code><code class="ruby plain">,</code> <code class="ruby constants">5</code><code class="ruby plain">)</code></div>
+                  <div class="line number6 index5 alt1"><code class="ruby plain">puts foo()</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_501785" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p018.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">[</code><code class="bash string">"hello"</code><code class="bash plain">, </code><code class="bash string">"world"</code><code class="bash plain">, </code><code class="bash plain">5</code><code class="bash plain">]</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">[]</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p>المتغير <strong class="font-Open-Sans-400">args*</strong> هو عبارة عن مصفوفة ( المصفوفة هي عبارة عن متغير يحتفظ بالعديد من القيم في الذاكرة ، من نفس النوع أو من أنواع مختلفة ) تقوم بإستقبال جميع المتغيرات عند إستدعاء الطريقة ، ويمكننا أن لا نرسل له أي قيمة .</p>
+
+    <p class="set-margin-bottom-to-zero">إنطلاقاً من روبي 1.9 و ما بعدها صار بإمكانك أن تقوم بتعريف قائمة المتغيرات هذه في أي مكان من الطريقة كالتالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">تعريف قائمة المتغيرات في الطريقة</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_44859" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">args(x, *y, z)</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">من الأمور الأخرى المهمة في متغيرات الطرق عند تعريف أكثر من متغير و وضع قيمة إبتدائية لها سواء كانت البعض أو كلها ، كيف يتم تعريف المتغيرات ( أي الأسبقية ) ، من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> أو من اليمين إلى اليسار مثل لغة <strong class="font-Open-Sans-400">Pascal</strong> ؟ الإجابة هي من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> ، لاحظ البرنامج التالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p019.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_726621" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">mtd(a=</code><code class="ruby constants">99</code><code class="ruby plain">, b=a+</code><code class="ruby constants">1</code><code class="ruby plain">)</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">[a,b]</code></div>
+                  <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="ruby plain">puts mtd</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_414459" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p019.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">99</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">100</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="lead">طرق العلامة (!)</p>
+
+    <p class="set-margin-bottom-to-zero">عند إرسال قيمة متغير إلى طريقة هل نقوم بإرسال قيمة هذا الكائن ( <strong class="font-Open-Sans-400">by value</strong> ) أو نقوم بإرساله ككائن ( <strong class="font-Open-Sans-400">reference</strong> ) ؟ البرنامج التالي سيوضح هذا التساؤل ، لكن كن متأكد أن كل المتغيرات التي يتم إرسالها ترسل كقيمة و ليس ككائن ( الفرق بين إرسال القيمة أو إرسال المتغير ككائن ، هو انه عند إرسال مرجع نحن لا نقوم بالتغيير على قيمة المتغير الاساسي في البرنامج ، أما عند إرسال القيمة ككائن فإنه عندما يتم التغيير على المتغير داخل الطريقة سيتم كذلك التغيير على المتغير خارجها ) .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading"><strong>p020.rb</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_982533" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+                <div class="line number9 index8 alt2">9</div>
+                <div class="line number10 index9 alt1">10</div>
+                <div class="line number11 index10 alt2">11</div>
+                <div class="line number12 index11 alt1">12</div>
+                <div class="line number13 index12 alt2">13</div>
+              </td>
+                <td class="code">
+                  <div class="container">
+                    <div class="line number1 index0 alt2"><code class="ruby keyword">def</code> <code class="ruby plain">downer(string)</code></div>
+                    <div class="line number2 index1 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">string.downcase</code></div>
+                    <div class="line number3 index2 alt2"><code class="ruby keyword">end</code></div>
+                    <div class="line number4 index3 alt1"><code class="ruby plain">a = </code><code class="ruby string">"HELLO"</code></div>
+                    <div class="line number5 index4 alt2"><code class="ruby plain">downer(a)</code></div>
+                    <div class="line number6 index5 alt1"><code class="ruby plain">puts a</code></div>
+                    <div class="line number7 index6 alt2">&nbsp;</div>
+                    <div class="line number8 index7 alt1"><code class="ruby keyword">def</code> <code class="ruby plain">downer(string)</code></div>
+                    <div class="line number9 index8 alt2"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">string.downcase!</code></div>
+                    <div class="line number10 index9 alt1"><code class="ruby keyword">end</code></div>
+                    <div class="line number11 index10 alt2"><code class="ruby plain">a = </code><code class="ruby string">"HELLO"</code></div>
+                    <div class="line number12 index11 alt1"><code class="ruby plain">downer(a)</code></div>
+                    <div class="line number13 index12 alt2"><code class="ruby plain">puts a</code></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_888039" class="syntaxhighlighter  bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">C:\برامج روبي&gt; ruby p020.rb</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">HELLO</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">hello</code></div>
+                  <div class="line number4 index3 alt1">&nbsp;</div>
+                  <div class="line number5 index4 alt2"><code class="bash plain">C:\برامج روبي&gt;</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-default last">
+  <div class="panel-body">
+    <p>أعتقد أن البرنامج السابق واضح و مفهوم ، يوجد شيء جديد واحد و هو الدالة <strong class="font-Open-Sans-400">downcase</strong> ( تقوم بجعل حروف أي نص صغيرة ) هذه الدالة معرفة من قبل روبي قمنا فقط بإستخدامها مع المتغير <strong class="font-Open-Sans-400">string</strong> داخل الطريقة <strong class="font-Open-Sans-400">downer</strong> التي قمنا بتعريفها ، في المرة الأولى عند إستخدامها على المتغير <strong class="font-Open-Sans-400">string</strong> لم تتغير قيمة المتغير <strong class="font-Open-Sans-400">a</strong> الذي قمنا بإرساله إلى الطريقة ، أما في المرة الثانية عند إستخدامها على المتغير <strong class="font-Open-Sans-400">string</strong> تغيرة معه قيمة المتغير <strong class="font-Open-Sans-400">a</strong> ، هذا هو الفرق بين الدوال التي تمتلك العلامة (!) و التي لا تمتلكها ، فالدوال من غير العلامة لا تقوم بالتأثير على المتغير خارج الطريقة المستخدمه داخلها ، على العكس تماماً الدوال التي تمتلك العلامة (!) تقوم بتغيير قيمة المتغير داخل و خارج الطريقة ، وأغلب الدوال المعرفة من قبل روبي يوجد لها نوعان الأولى بدون العلامة و الثانية معها ، كمثال : <strong  class="font-Open-Sans-400">sort/sort! , upcase/upcase! , chomp/chomp! , reverse/reverse!</strong> ، لذلك إحذر عند إستخدامها .</p>
+
+    <p class="lead">الطرق التي تنتهي بـ (؟)</p>
+
+    <p>إتفق مبرمجوا روبي على أن الطرق التي تمتلك العلامة (؟) في نهايتها سيتكون لها معنى معين ، فهي تعني أن هذه الطريفة ترجع قيمة إما صحيحة أو خاطئة ( <strong class="font-Open-Sans-400">true , false</strong> ) كمثال على ذلك الدالة <strong class="font-Open-Sans-400">?empty</strong> للمصفوفات فهي ترجع قيمة صحيحة إذا كانت الدالة فارغة و قيمة خاطئة إذا كانت المصفوفة تحتوي على عناصر ، غير ذلك ليس من الضروري أن ترجع قيم <strong class="font-Open-Sans-400">true , false</strong> على سبيل المثال الدالة <strong class="font-Open-Sans-400">?nonzero</strong> تختبر إذا كان الرقم صفر أو لا ، ترجع القيمة <strong class="font-Open-Sans-400">nil</strong> إذا كانت قيمة المتغير صفر و ترجع الرقم الذي داخل المتغير إذا لم يكن صفر ، فكما سبق و ذكرنا أي شيء في روبي غير القيمتان <strong class="font-Open-Sans-400">false , nil</strong> هو صحيح .</p>
+
+    <p>لقد قمنا بجمع <%= link_to "أهم النقاط", ruby_tutorial_summary_2_path %> التي تحتاج لتذكرها بعد إكمالك الدروس التالية : <%= link_to "المجالات", ruby_tutorial_scope_path %> ، <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path %> ، <%= link_to "الأسماء", ruby_tutorial_names_path %> ، <%= link_to "الطرق", ruby_tutorial_methods_path %> .</p>
+
+    <p class="text-left set-margin-bottom-to-zero">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <%= link_to "الأسماء", ruby_tutorial_names_path, class: "btn btn-primary btn-sm" %>
+      |
+      <%= link_to "الملخص الثاني", ruby_tutorial_summary_2_path, class: "btn btn-primary btn-sm" %>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </p>
+  </div>
+</div>
