@@ -1,4 +1,4 @@
-<div class="panel panel-default beginning">
+<div class="panel panel-default alone">
   <div class="panel-body">
     <p class="text-left">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -11,35 +11,64 @@
     <h2 id="title">الملخص الثاني</h2>
 
     <ol class="lists">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><em>تجنب</em> إستخدام المجال العام و المتغيرات العامة ، المجال العام يعني أنه المجال الذي يغطي كافة البرنامج ، يمكنك تعريف متغير عام عن طريق بداية اسم المتغير بالعلامة ($) ، روبي فعلياً تبدأ برنامجك بعدد كبير نسبياً من المتغيرات العامة التي يمكنك الإستفادة منها بشكل كبير ما إذا كنت تريد معلومات عن برنامجك ، المجال العام أو المتغيرات العامة لا تتماشى مع منطق البرمجة كائنية التوجه ، وما إن تبدأ بإستخدامها في برنامجك أو تطبيقك ستجد أن فصل كتل البرنامج عن بعضها سيصبح صعب بعض الشيء .</li>
+      <li>الدوال <strong class="font-Open-Sans-400">gets , chomp</strong> تستخدم لإستقبال المدخلات من المستخم .</li>
+      <li>الدالة <strong class="font-Open-Sans-400">gets</strong> تعيد مدخل نصي من المستخدم متبوع بسطر جديد ، الدالة <strong class="font-Open-Sans-400">chomp</strong> تقوم بإزالة هذا السطر .</li>
+      <li>تستخدم روبي الأسماء للإشارة إلى : الثوابت ، المتغيرات ، الطرق ، الفئات و الوحدات ، الحرف الأول من الاسم يساعد روبي على تمييز المقصود من هذا الاسم .</li>
+      <li>عندما نذكر حرف صغير نقصد الحروف من "a" إلى "z" ، و الحروف الكبيرة نقصد بها الحروف من "A" إلى "Z" ، أما الأرقام فهي من "0" إلى "9" .</li>
+      <li>الأسماء هي تركيبة من الحروف الكبيرة و الصغيرة و الأرقام و الشرطة السفلية .</li>
+      <li>يمكنك إستخدام المتغيرات في روبي دون أي تعريف ، أسماء المتغيرات نفسها تدل على المجال .</li>
+      <li>"؟" ، "!" و "=" هي العلامات الغريبة الوحيدة التي يمكن إستخدامها في نهاية اسم الطريقة .</li>
+      <li>حسب الإتفاقية في روبي ، يتم إستخدام الشرطة السفلية (_) لفصل كلمات اسم المتغير و على سبيل المثال <strong class="font-Open-Sans-400">my_string</strong> ، أما الثوابت يتم كتابة أسمائها بحروف كبيرة و الفصل بين الأسماء بشرطة سفلية ومثالاً على ذلك <strong class="font-Open-Sans-400">CONSTANT_VARIABLE</strong> ، الفئات و الوحدات أسمائها أيضاً ثوابت لكن لها نظام تسمية مختلف حيث أنه عندما تريد تسمية فئة معينة أو وحدة يكون أول حرف من كل كلمة كبير و باقي الأحره صغيرة و لا يفصل بين الكلمات بأي شيء ، كمثال : <strong class="font-Open-Sans-400">ClassBenghazi , ModuleLibya</strong> .</li>
+      <li>المتغيرات في برنامجك يمكنها الإشارة إلى كائنات من أنواع بيانات مختلفة على طول عمر البرنامج .</li>
+      <li>تذكر أن أي شيء في روبي هو كائن وعندما تقوم بإجراء العمليات بينها سيكون الناتج هو أيضاً كائن .</li>
+      <li>أنواع البيانات الرئيسية في روبي هي :</li>
+
+      <center>
+        <div style="width: 300px; margin: 10px 0;">
+          <ul class="list-group set-padding-right-to-zero set-margin-bottom-to-zero">
+            <li class="list-group-item">
+              <h4 class="list-group-item-heading text-left"><strong class="font-Open-Sans-400">Numeric</strong></h4>
+              <p class="list-group-item-text text-right">تشمل الأنواع الفرعية <strong class="font-Open-Sans-400">Fixnum , Integer</strong> و <strong class="font-Open-Sans-400">Float</strong></p>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">String</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">Array</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">Hash</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">Object</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">Symbol</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">Range</strong>
+            </li>
+            <li class="list-group-item">
+              <strong class="font-Open-Sans-400">RegExp</strong>
+            </li>
+          </ul>
+        </div>
+      </center>
+
+      <li>تذكر أنه يمكنك معرفة الكائن الذي تتواجد داخله عن طريق المتغير <strong class="font-Open-Sans-400"><em>self</em></strong> .</li>
+      <li>نستخدم الكلمة المفتاحية <strong class="font-Open-Sans-400">def</strong> و <strong class="font-Open-Sans-400">end</strong> لتعريف الطرق ، وقد يكون هناك متغيرات لهذه الطرق توضع بين قوسين بعد اسم الطريقة .</li>
+      <li>لا نقوم بإستخدام الأمر <strong class="font-Open-Sans-400">return</strong> لنقوم بإرجاع قيمة من الطريقة ، الطرق في روبي تقوم تلقائياً بإرجاع قيمة أخر سطر منها ( مع العلم أنه يمكنك إستخدام الأمر <strong class="font-Open-Sans-400">return</strong> كما في باقي لغات البرمجة ) .</li>
+      <li>من الموصى به و المحبب أن تقوم بترك سطر فارغ أثناء كتابة برنامجك بين كل طريقة و أخرى .</li>
+      <li>الأقواس في روبي إختيارية عند تعريف الطرق أو عند إستدعائها .</li>
+      <li>الطرق التي تنتهي بالعلامة (؟) تقوم بإرجاع قيمة حقيقية على الأغلب ( <strong class="font-Open-Sans-400">true , false</strong> ) .</li>
+      <li>تذكر أن تتعامل بحذر مع الطرق التي تنتهي بالعلامة (!) .</li>
+      <li>روبي تتيح لك القيام بإسناد قيمة إبتدائية لمتغيرات الطرق ، و سيتم التعامل بها إذا لم يتم إرسال هذه القيم عند إستدعاء الطريقة .</li>
+      <li>تذكر أنا هناك التنسيق {...}# ، و الذي يمكنك من خلاله تنفيذ كود روبي داخل النصوص .</li>
+      <li>الأسماء المستعارة أو <strong class="font-Open-Sans-400">alias</strong> ، وظيفتها هي أن تقوم بتغيير اسم طريقة موجودة بالفعل .</li>
+      <li>في روبي يمكننا كتابة طرق تقبل عدد لا نهائي من المتغيرات .</li>
+      <li>لا يوجد حد معين للمتغيرات التي يمكن إرسالها إلي أي طريقة .</li>
+      <li>يتم تعريف متغيرات الطرق ( الأسبقية ) من اليسار إلى اليمين ، مثل لغة البرمجة <strong class="font-Open-Sans-400">C</strong> .</li>
     </ol>
 
     <p class="text-left set-margin-bottom-to-zero">

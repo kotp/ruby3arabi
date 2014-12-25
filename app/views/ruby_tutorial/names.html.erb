@@ -2,7 +2,7 @@
   <div class="panel-body">
     <p class="text-left">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "btn btn-primary btn-sm" %>
+      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_inputs_path, class: "btn btn-primary btn-sm" %>
       |
       <%= link_to "الطرق", ruby_tutorial_methods_path, class: "btn btn-primary btn-sm" %>
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -241,13 +241,97 @@
   </div>
 </div>
 
+<div class="panel panel-default middle">
+  <div class="panel-body">
+    <p class="set-margin-bottom-to-zero">ختاماً روبي قامت بتوفير متغير يسمى <strong class="font-Open-Sans-400"><em>self</em></strong> وهو يشير إلى الكائن الذي تتواجد فيه حالياً ، شاهد المثال التالي .</p>
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular"><strong class="font-Open-Sans-400"><em>self</em></strong> إستخدام المتغير</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_590129" class="syntaxhighlighter ruby">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+                <div class="line number5 index4 alt2">5</div>
+                <div class="line number6 index5 alt1">6</div>
+                <div class="line number7 index6 alt2">7</div>
+                <div class="line number8 index7 alt1">8</div>
+                <div class="line number9 index8 alt2">9</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="ruby plain">puts </code><code class="ruby keyword"><em>self</em></code><code class="ruby plain">.</code><code class="ruby keyword">class</code></div>
+                  <div class="line number2 index1 alt1"><code class="ruby plain">puts </code><code class="ruby keyword"><em>self</em></code></div>
+                  <div class="line number3 index2 alt2">&nbsp;</div>
+                  <div class="line number4 index3 alt1"><code class="ruby keyword">class</code> <code class="ruby plain">ClassTest</code></div>
+                  <div class="line number5 index4 alt2"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">puts </code><code class="ruby keyword"><em>self</em></code><code class="ruby plain">.</code><code class="ruby keyword">class</code></div>
+                  <div class="line number6 index5 alt1"><code class="ruby spaces">&nbsp;&nbsp;</code><code class="ruby plain">puts </code><code class="ruby keyword"><em>self</em></code></div>
+                  <div class="line number7 index6 alt2"><code class="ruby keyword">end</code></div>
+                  <div class="line number8 index7 alt1">&nbsp;</div>
+                  <div class="line number9 index8 alt2"><code class="ruby plain">ClassTest.</code><code class="ruby keyword">new</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-primary middle">
+  <div class="panel-heading text-right"><strong class="font-DroidKufi-Regular">ناتج التنفيذ</strong></div>
+  <div class="panel-body set-padding-to-zero">
+
+    <div>
+      <div id="highlighter_463264" class="syntaxhighlighter bash">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="gutter">
+                <div class="line number1 index0 alt2">1</div>
+                <div class="line number2 index1 alt1">2</div>
+                <div class="line number3 index2 alt2">3</div>
+                <div class="line number4 index3 alt1">4</div>
+              </td>
+              <td class="code">
+                <div class="container">
+                  <div class="line number1 index0 alt2"><code class="bash plain">Object</code></div>
+                  <div class="line number2 index1 alt1"><code class="bash plain">main</code></div>
+                  <div class="line number3 index2 alt2"><code class="bash plain">Class</code></div>
+                  <div class="line number4 index3 alt1"><code class="bash plain">ClassTest</code></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="panel panel-default last">
   <div class="panel-body">
+    <p>لا تهتم إذا لم تفهم الكود حالياً ، عند بداية البرنامج قمنا بطباعة <strong class="font-Open-Sans-400"><em>self</em>.class</strong> و هذا الأمر يرجع لنا الفئة الخاصة بالكائن الذي نتواجد نحن داخله حاليا ، و قامت بإرجاع القيمة <strong class="font-Open-Sans-400">Object</strong> وهذا يعني أن عند بداية تنفيذ البرنامج نكون دائما في الفئة <strong class="font-Open-Sans-400">Object</strong> ، بعد ذلك قمنا بطباعة <strong class="font-Open-Sans-400"><em>self</em></strong> وقام بإرجاع القيمة <strong class="font-Open-Sans-400">main</strong> وبهذا نفهم أيضاً أن عند بداية البرنامج نكون داخل الكائن <strong class="font-Open-Sans-400">main</strong> .</p>
+
+    <p>للتوضيح أكثر في المثال السابق قمنا بتعريف فئة جديدة تسمى <strong class="font-Open-Sans-400">ClassTest</strong> ، وكتبنا داخلها نفس الاوامر التي كتبناها عند بداية البرنامج ، و قمنا بتعريف كائن جديد من هذه الفئة عن طريق الأمر <strong class="font-Open-Sans-400">ClassTest.new</strong> ، بعد تعريف الكائن قام تلقائياً بتنفيذ الأوامر التي داخل الفئة ، و بالعودة إلى المخرجات من الفئة التي قمنا بتعريفها نرى أن ناتج الأمر <strong class="font-Open-Sans-400"><em>self</em>.class</strong> هو <strong class="font-Open-Sans-400">Class</strong> وهذا يعني أننا داخل فئة معرفة ، اما الخرج من الأمر <strong class="font-Open-Sans-400"><em>self</em></strong> هو <strong class="font-Open-Sans-400">ClassTest</strong> ، وهذا ما نريد الوصول إليه أنه عندما نقوم بطباعة المتغير <strong class="font-Open-Sans-400"><em>self</em></strong> نحصل على الكائن الذي نتواجد فيه حالياً وفي حالتنا هذه هو <strong class="font-Open-Sans-400">ClassTest</strong> .</p>
+
     <p>في درسنا القادم سنكمل حديثنا عن الطرق و كيفية تعريفها و التعامل معها ، و سنقوم بتطبيق أول مثال شاهدته عند بداية دراستك في درس <%= link_to "المقدمة", ruby_tutorial_introduction_path %> .</p>
 
     <p  class="text-left set-margin-bottom-to-zero">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "btn btn-primary btn-sm" %>
+      <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_inputs_path, class: "btn btn-primary btn-sm" %>
       |
       <%= link_to "الطرق", ruby_tutorial_methods_path, class: "btn btn-primary btn-sm" %>
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

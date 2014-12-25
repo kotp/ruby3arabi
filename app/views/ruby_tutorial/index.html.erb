@@ -20,15 +20,15 @@
       </li>
       <li><strong><%= link_to "النصوص في روبي", ruby_tutorial_strings_path, class: "index-link" %></strong></li>
       <li><strong><%= link_to "المتغيرات", ruby_tutorial_variables_path, class: "index-link" %></strong></li>
-      <li><strong><%= link_to "الملخص الأول", ruby_tutorial_summary_1_path, class: "index-link" %> <sup><span class="glyphicon glyphicon-star" aria-hidden="true"></span></sup></strong></li>
-      <li><strong><%= link_to "المجالات", ruby_tutorial_scope_path, class: "index-link" %></strong>
+      <li><strong><%= link_to "الملخص الأول", ruby_tutorial_summary_1_path, class: "index-link" %> <sup><span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #BD110A;"></span></sup></strong></li>
+      <li><strong><%= link_to "المجالات", ruby_tutorial_scopes_path, class: "index-link" %></strong>
         <ul>
           <li>النطاق العام و المتغيرات العامة</li>
           <li>المتغيرات العامة المضمنة</li>
           <li>النطاق المحلي</li>
         </ul>
       </li>
-      <li><strong><%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path, class: "index-link" %></strong></li>
+      <li><strong><%= link_to "الحصول على المدخلات", ruby_tutorial_getting_inputs_path, class: "index-link" %></strong></li>
       <li><strong><%= link_to "الأسماء", ruby_tutorial_names_path, class: "index-link" %></strong></li>
       <li><strong><%= link_to "الطرق", ruby_tutorial_methods_path, class: "index-link" %></strong>
         <ul>
@@ -36,8 +36,15 @@
           <li>الطرق التي تنتهي بـ (؟)</li>
         </ul>
       </li>
-      <li><strong><%= link_to "الملخص الثاني", ruby_tutorial_summary_2_path, class: "index-link" %> <sup><span class="glyphicon glyphicon-star" aria-hidden="true"></span></sup></strong></li>
+      <li><strong><%= link_to "الملخص الثاني", ruby_tutorial_summary_2_path, class: "index-link" %> <sup><span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #BD110A;"></span></sup></strong></li>
       <li><strong><%= link_to sanitize('روبي <strong class="font-Open-Sans-400">ri tool</strong>'), ruby_tutorial_ruby_ri_tool_path, class: "index-link" %></strong></li>
+      <li><strong><%= link_to "المزيد في النصوص", ruby_tutorial_more_on_strings_path, class: "index-link" %></strong>
+        <ul>
+          <li>سرد كافة طرق فئة أو كائن</li>
+          <li>المقارنة بين النصوص</li>
+          <li>إسنخدام <strong class="font-Open-Sans-300">%w</strong></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

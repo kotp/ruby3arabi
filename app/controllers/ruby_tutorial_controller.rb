@@ -46,12 +46,12 @@ class RubyTutorialController < ApplicationController
     @active_tap = "ruby_tutorial"
   end
 
-  def scope
+  def scopes
     @title = "دروس روبي | المجالات"
     @active_tap = "ruby_tutorial"
   end
 
-  def getting_input
+  def getting_inputs
     @title = "دروس روبي | الحصول على المدخلات"
     @active_tap = "ruby_tutorial"
   end
@@ -73,6 +73,11 @@ class RubyTutorialController < ApplicationController
 
   def ruby_ri_tool
     @title = "دروس روبي | روبي ri tool"
+    @active_tap = "ruby_tutorial"
+  end
+
+  def more_on_strings
+    @title = "دروس روبي | المزيد في النصوص"
     @active_tap = "ruby_tutorial"
   end
 end

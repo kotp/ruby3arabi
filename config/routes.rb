@@ -17,9 +17,9 @@ Rails.application.routes.draw do
 
   get 'ruby_tutorial/summary_1'
 
-  get 'ruby_tutorial/scope'
+  get 'ruby_tutorial/scopes'
 
-  get 'ruby_tutorial/getting_input'
+  get 'ruby_tutorial/getting_inputs'
 
   get 'ruby_tutorial/names'
 
@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   get 'ruby_tutorial/summary_2'
 
   get 'ruby_tutorial/ruby_ri_tool'
+
+  get 'ruby_tutorial/more_on_strings'
 
   get 'ruby3arabi/welcome'
 

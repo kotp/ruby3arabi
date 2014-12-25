@@ -259,7 +259,7 @@
   <div class="panel-body">
     <p>الجزء {5 * 100}# في الكود السابق يرجع قيمة العملية الحسابية 5 * 100 على هيئة نص وهي 500 .</p>
 
-    <p class="set-margin-bottom-to-zero">الأن سنتحدث عن شيء يخص الطرق أيضاً وهو الأسماء المستعارة أو <strong class="font-Open-Sans-400">alias</strong> ، وظيفته هي أن تقوم بتغيير اسم طريقة موجودة بالفعل ، البرنامج التالي سيوضح الفكرة أكثر عن الأسماء المستعارة في روبي .</p>
+    <p class="set-margin-bottom-to-zero">الأن سنتحدث عن شيء يخص الطرق أيضاً وهو الأسماء المستعارة أو <strong class="font-Open-Sans-400">alias</strong> ، وظيفتها هي أن تقوم بتغيير اسم طريقة موجودة بالفعل ، البرنامج التالي سيوضح الفكرة أكثر عن الأسماء المستعارة في روبي .</p>
   </div>
 </div>
 
@@ -459,7 +459,7 @@
 
 <div class="panel panel-default middle">
   <div class="panel-body">
-    <p class="set-margin-bottom-to-zero">من الأمور الأخرى المهمة في متغيرات الطرق عند تعريف أكثر من متغير و وضع قيمة إبتدائية لها سواء كانت البعض أو كلها ، كيف يتم تعريف المتغيرات ( أي الأسبقية ) ، من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> أو من اليمين إلى اليسار مثل لغة <strong class="font-Open-Sans-400">Pascal</strong> ؟ الإجابة هي من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> ، لاحظ البرنامج التالي .</p>
+    <p class="set-margin-bottom-to-zero">من الأمور الأخرى المهمة في متغيرات الطرق عند تعريف أكثر من متغير و وضع قيمة إبتدائية لها سواء كانت البعض أو كلها ، كيف يتم تعريف المتغيرات ( أي الأسبقية ) ، هل من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> أو من اليمين إلى اليسار مثل لغة <strong class="font-Open-Sans-400">Pascal</strong> ؟ الإجابة هي من اليسار إلى اليمين مثل لغة <strong class="font-Open-Sans-400">C</strong> ، لاحظ البرنامج التالي .</p>
   </div>
 </div>
 
@@ -533,6 +533,8 @@
 
 <div class="panel panel-default middle">
   <div class="panel-body">
+    <p>في البرنامج السابق إذا حاولت عكس ترتيب تعريف المتغيرات و قمت بالتنفيذ سيقوم مفسر روبي بطباعة خطأ على الشاشة يقول فيه أنه لا يمكنه التعرف على المتغير <strong class="font-Open-Sans-400">a</strong> لأنه لم يتم تعريفه بعد .</p>
+
     <p class="lead">طرق العلامة (!)</p>
 
     <p class="set-margin-bottom-to-zero">عند إرسال قيمة متغير إلى طريقة هل نقوم بإرسال قيمة هذا الكائن ( <strong class="font-Open-Sans-400">by value</strong> ) أو نقوم بإرساله ككائن ( <strong class="font-Open-Sans-400">reference</strong> ) ؟ البرنامج التالي سيوضح هذا التساؤل ، لكن كن متأكد أن كل المتغيرات التي يتم إرسالها ترسل كقيمة و ليس ككائن ( الفرق بين إرسال القيمة أو إرسال المتغير ككائن ، هو انه عند إرسال مرجع نحن لا نقوم بالتغيير على قيمة المتغير الاساسي في البرنامج ، أما عند إرسال القيمة ككائن فإنه عندما يتم التغيير على المتغير داخل الطريقة سيتم كذلك التغيير على المتغير خارجها ) .</p>
@@ -631,7 +633,7 @@
 
     <p>إتفق مبرمجوا روبي على أن الطرق التي تمتلك العلامة (؟) في نهايتها سيتكون لها معنى معين ، فهي تعني أن هذه الطريفة ترجع قيمة إما صحيحة أو خاطئة ( <strong class="font-Open-Sans-400">true , false</strong> ) كمثال على ذلك الدالة <strong class="font-Open-Sans-400">?empty</strong> للمصفوفات فهي ترجع قيمة صحيحة إذا كانت الدالة فارغة و قيمة خاطئة إذا كانت المصفوفة تحتوي على عناصر ، غير ذلك ليس من الضروري أن ترجع قيم <strong class="font-Open-Sans-400">true , false</strong> على سبيل المثال الدالة <strong class="font-Open-Sans-400">?nonzero</strong> تختبر إذا كان الرقم صفر أو لا ، ترجع القيمة <strong class="font-Open-Sans-400">nil</strong> إذا كانت قيمة المتغير صفر و ترجع الرقم الذي داخل المتغير إذا لم يكن صفر ، فكما سبق و ذكرنا أي شيء في روبي غير القيمتان <strong class="font-Open-Sans-400">false , nil</strong> هو صحيح .</p>
 
-    <p>لقد قمنا بجمع <%= link_to "أهم النقاط", ruby_tutorial_summary_2_path %> التي تحتاج لتذكرها بعد إكمالك الدروس التالية : <%= link_to "المجالات", ruby_tutorial_scope_path %> ، <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_input_path %> ، <%= link_to "الأسماء", ruby_tutorial_names_path %> ، <%= link_to "الطرق", ruby_tutorial_methods_path %> .</p>
+    <p>لقد قمنا بجمع <%= link_to "أهم النقاط", ruby_tutorial_summary_2_path %> التي تحتاج لتذكرها بعد إكمالك الدروس التالية : <%= link_to "المجالات", ruby_tutorial_scopes_path %> ، <%= link_to "الحصول على المدخلات", ruby_tutorial_getting_inputs_path %> ، <%= link_to "الأسماء", ruby_tutorial_names_path %> ، <%= link_to "الطرق", ruby_tutorial_methods_path %> .</p>
 
     <p class="text-left set-margin-bottom-to-zero">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
